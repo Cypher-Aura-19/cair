@@ -2,129 +2,57 @@
    REPORT INCIDENT PAGE - MODERN REDESIGN
    ============================================ */
 
-/* Hero Section */
-.report-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    max-width: 1400px;
-    margin: 0 auto;
+/* Simple Page Hero */
+.page-hero {
+    text-align: center;
     padding: 160px 40px 80px;
-    align-items: center;
+    background: linear-gradient(180deg, var(--color-blue) 0%, #1E3A8A 100%);
+    border-radius: 0 0 40px 40px;
 }
 
-.report-hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.page-hero-content {
+    max-width: 750px;
+    margin: 0 auto;
 }
 
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(47, 104, 196, 0.08);
-    color: var(--color-blue);
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 14px;
-    width: fit-content;
-}
-
-.hero-badge i {
-    font-size: 18px;
-}
-
-.hero-badge.urgent {
-    background: rgba(247, 151, 34, 0.1);
-    color: var(--color-orange);
-}
-
-.report-hero h1 {
-    font-size: 52px;
+.page-hero h1 {
+    font-size: 48px;
     line-height: 1.15;
     letter-spacing: -1.5px;
-    margin: 0;
+    margin: 0 0 20px;
+    color: white !important;
 }
 
-.text-highlight {
-    color: var(--color-orange);
-}
-
-.report-hero-content > p {
+.page-hero p {
     font-size: 18px;
-    color: var(--color-text-grey);
+    color: rgba(255, 255, 255, 0.9) !important;
     line-height: 1.7;
-    max-width: 500px;
+    margin: 0 0 32px;
 }
 
-.hero-trust-badges {
+.hero-trust-pills {
     display: flex;
-    gap: 24px;
-    margin-top: 16px;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.trust-badge {
-    display: flex;
+.trust-pill {
+    display: inline-flex;
     align-items: center;
     gap: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
     font-size: 14px;
-    color: var(--color-text-grey);
     font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.trust-badge i {
-    font-size: 18px;
-    color: var(--color-blue);
-}
-
-.report-hero-visual {
-    position: relative;
-}
-
-.report-hero-visual > img {
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
-}
-
-.hero-stats-card {
-    position: absolute;
-    bottom: -30px;
-    left: 30px;
-    background: white;
-    padding: 24px 32px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.stat-number {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--color-blue);
-}
-
-.stat-label {
-    font-size: 13px;
-    color: var(--color-text-grey);
-}
-
-.stat-divider {
-    width: 1px;
-    height: 40px;
-    background: var(--color-light-gray);
+.trust-pill i {
+    font-size: 16px;
+    opacity: 0.9;
 }
 
 /* Emergency Banner */
@@ -979,27 +907,16 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .report-hero {
-        grid-template-columns: 1fr;
-        gap: 50px;
+    .page-hero {
         padding-top: 140px;
     }
 
-    .report-hero h1 {
-        font-size: 42px;
+    .page-hero h1 {
+        font-size: 38px;
     }
 
-    .hero-trust-badges {
-        flex-wrap: wrap;
-    }
-
-    .report-hero-visual > img {
-        height: 400px;
-    }
-
-    .hero-stats-card {
-        left: 20px;
-        bottom: -20px;
+    .hero-trust-pills {
+        gap: 12px;
     }
 
     .timeline-steps {
@@ -1042,12 +959,21 @@
 }
 
 @media (max-width: 768px) {
-    .report-hero {
+    .page-hero {
         padding: 120px 20px 60px;
     }
 
-    .report-hero h1 {
-        font-size: 34px;
+    .page-hero {
+        border-radius: 0 0 24px 24px;
+    }
+
+    .page-hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-trust-pills {
+        flex-direction: column;
+        align-items: center;
     }
 
     .emergency-content {

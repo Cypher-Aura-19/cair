@@ -97,48 +97,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // CONTACT PAGE ANIMATIONS (NEW DESIGN)
     // ============================================
 
-    // New Contact Hero
-    const contactHeroNew = document.querySelector('.contact-hero-new');
-    if (contactHeroNew) {
+    // Simple Page Hero Animation
+    const pageHero = document.querySelector('.page-hero');
+    if (pageHero) {
         const heroTl = gsap.timeline();
         
-        heroTl.from('.hero-badge', {
+        heroTl.from('.page-hero h1', {
             opacity: 0,
-            y: 30,
-            duration: 0.5,
-            ease: 'power3.out'
-        })
-        .from('.contact-hero-new h1', {
-            opacity: 0,
-            y: 50,
+            y: 40,
             duration: 0.7,
             ease: 'power3.out'
-        }, '-=0.3')
-        .from('.hero-content-left > p', {
+        })
+        .from('.page-hero p', {
             opacity: 0,
             y: 30,
             duration: 0.5,
             ease: 'power3.out'
         }, '-=0.4')
-        .from('.quick-link-card', {
+        .from('.hero-quick-actions .quick-action, .hero-trust-pills .trust-pill', {
             opacity: 0,
             y: 20,
             stagger: 0.1,
             duration: 0.4,
             ease: 'power2.out'
-        }, '-=0.2')
-        .from('.hero-image-right > img', {
-            opacity: 0,
-            scale: 0.95,
-            duration: 0.8,
-            ease: 'power3.out'
-        }, '-=0.6')
-        .from('.hero-floating-card', {
-            opacity: 0,
-            x: -30,
-            duration: 0.5,
-            ease: 'back.out(1.5)'
-        }, '-=0.3');
+        }, '-=0.2');
     }
 
     // Contact Methods Section
@@ -1000,49 +982,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // REPORT INCIDENT PAGE ANIMATIONS (NEW DESIGN)
     // ============================================
 
-    // Report Hero
-    const reportHero = document.querySelector('.report-hero');
-    if (reportHero) {
-        const heroTl = gsap.timeline();
-        
-        heroTl.from('.report-hero .hero-badge', {
-            opacity: 0,
-            y: 30,
-            duration: 0.5,
-            ease: 'power3.out'
-        })
-        .from('.report-hero h1', {
-            opacity: 0,
-            y: 50,
-            duration: 0.7,
-            ease: 'power3.out'
-        }, '-=0.3')
-        .from('.report-hero-content > p', {
-            opacity: 0,
-            y: 30,
-            duration: 0.5,
-            ease: 'power3.out'
-        }, '-=0.4')
-        .from('.trust-badge', {
-            opacity: 0,
-            y: 20,
-            stagger: 0.1,
-            duration: 0.4,
-            ease: 'power2.out'
-        }, '-=0.2')
-        .from('.report-hero-visual > img', {
-            opacity: 0,
-            scale: 0.95,
-            duration: 0.8,
-            ease: 'power3.out'
-        }, '-=0.5')
-        .from('.hero-stats-card', {
-            opacity: 0,
-            y: 30,
-            duration: 0.5,
-            ease: 'back.out(1.5)'
-        }, '-=0.3');
-    }
+    // Report Hero (uses same .page-hero class now, handled above)
 
     // Emergency Banner
     const emergencyBanner = document.querySelector('.emergency-banner');
