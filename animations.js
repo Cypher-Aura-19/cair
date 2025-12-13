@@ -994,3 +994,330 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('GSAP Animations initialized');
 });
+
+
+    // ============================================
+    // REPORT INCIDENT PAGE ANIMATIONS (NEW DESIGN)
+    // ============================================
+
+    // Report Hero
+    const reportHero = document.querySelector('.report-hero');
+    if (reportHero) {
+        const heroTl = gsap.timeline();
+        
+        heroTl.from('.report-hero .hero-badge', {
+            opacity: 0,
+            y: 30,
+            duration: 0.5,
+            ease: 'power3.out'
+        })
+        .from('.report-hero h1', {
+            opacity: 0,
+            y: 50,
+            duration: 0.7,
+            ease: 'power3.out'
+        }, '-=0.3')
+        .from('.report-hero-content > p', {
+            opacity: 0,
+            y: 30,
+            duration: 0.5,
+            ease: 'power3.out'
+        }, '-=0.4')
+        .from('.trust-badge', {
+            opacity: 0,
+            y: 20,
+            stagger: 0.1,
+            duration: 0.4,
+            ease: 'power2.out'
+        }, '-=0.2')
+        .from('.report-hero-visual > img', {
+            opacity: 0,
+            scale: 0.95,
+            duration: 0.8,
+            ease: 'power3.out'
+        }, '-=0.5')
+        .from('.hero-stats-card', {
+            opacity: 0,
+            y: 30,
+            duration: 0.5,
+            ease: 'back.out(1.5)'
+        }, '-=0.3');
+    }
+
+    // Emergency Banner
+    const emergencyBanner = document.querySelector('.emergency-banner');
+    if (emergencyBanner) {
+        gsap.fromTo('.emergency-content', 
+            { opacity: 0, y: 30 },
+            {
+                scrollTrigger: {
+                    trigger: emergencyBanner,
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        // Pulse animation for emergency icon
+        gsap.to('.emergency-icon', {
+            scale: 1.05,
+            duration: 0.8,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+    }
+
+    // Process Timeline
+    const processTimeline = document.querySelector('.process-timeline');
+    if (processTimeline) {
+        gsap.fromTo('.timeline-header', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: processTimeline,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.timeline-step', 
+            { opacity: 0, y: 50 },
+            {
+                scrollTrigger: {
+                    trigger: '.timeline-steps',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.timeline-connector', 
+            { scaleX: 0 },
+            {
+                scrollTrigger: {
+                    trigger: '.timeline-steps',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                scaleX: 1,
+                duration: 0.8,
+                delay: 0.5,
+                ease: 'power2.out'
+            }
+        );
+    }
+
+    // Timeline step hover
+    document.querySelectorAll('.timeline-step').forEach(step => {
+        const icon = step.querySelector('.step-icon');
+        step.addEventListener('mouseenter', () => {
+            gsap.to(step, { y: -8, duration: 0.3, ease: 'power2.out' });
+            gsap.to(icon, { scale: 1.1, rotation: 5, duration: 0.3, ease: 'back.out(2)' });
+        });
+        step.addEventListener('mouseleave', () => {
+            gsap.to(step, { y: 0, duration: 0.3, ease: 'power2.out' });
+            gsap.to(icon, { scale: 1, rotation: 0, duration: 0.3, ease: 'power2.out' });
+        });
+    });
+
+    // Cases Section
+    const casesSection = document.querySelector('.cases-section');
+    if (casesSection) {
+        gsap.fromTo('.cases-header', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: casesSection,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.case-card', 
+            { opacity: 0, y: 50 },
+            {
+                scrollTrigger: {
+                    trigger: '.cases-grid',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+                duration: 0.5,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.scope-notice', 
+            { opacity: 0, y: 30 },
+            {
+                scrollTrigger: {
+                    trigger: '.scope-notice',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Case card hover
+    document.querySelectorAll('.case-card').forEach(card => {
+        const icon = card.querySelector('.case-icon');
+        card.addEventListener('mouseenter', () => {
+            gsap.to(card, { y: -10, duration: 0.3, ease: 'power2.out' });
+            gsap.to(icon, { scale: 1.1, duration: 0.3, ease: 'back.out(2)' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card, { y: 0, duration: 0.3, ease: 'power2.out' });
+            gsap.to(icon, { scale: 1, duration: 0.3, ease: 'power2.out' });
+        });
+    });
+
+    // Report Form Section
+    const reportFormSection = document.querySelector('.report-form-section');
+    if (reportFormSection) {
+        gsap.fromTo('.form-section-header', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: reportFormSection,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.report-form', 
+            { opacity: 0, x: -50 },
+            {
+                scrollTrigger: {
+                    trigger: '.report-form-wrapper',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                x: 0,
+                duration: 0.8,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.report-sidebar > *', 
+            { opacity: 0, x: 50 },
+            {
+                scrollTrigger: {
+                    trigger: '.report-sidebar',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                x: 0,
+                stagger: 0.15,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Incident card hover
+    document.querySelectorAll('.incident-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            gsap.to(card.querySelector('.card-content'), { y: -5, duration: 0.2, ease: 'power2.out' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card.querySelector('.card-content'), { y: 0, duration: 0.2, ease: 'power2.out' });
+        });
+    });
+
+    // Testimonials Section New
+    const testimonialsSectionNew = document.querySelector('.testimonials-section-new');
+    if (testimonialsSectionNew) {
+        gsap.fromTo('.testimonials-header', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: testimonialsSectionNew,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.testimonial-card-new', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: '.testimonials-grid',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                stagger: 0.12,
+                duration: 0.5,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Testimonial card hover
+    document.querySelectorAll('.testimonial-card-new').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            gsap.to(card, { y: -8, duration: 0.25, ease: 'power2.out' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card, { y: 0, duration: 0.25, ease: 'power2.out' });
+        });
+    });
+
+    // Report CTA
+    const reportCta = document.querySelector('.report-cta');
+    if (reportCta) {
+        gsap.fromTo('.report-cta .cta-content', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: reportCta,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.7,
+                ease: 'power3.out'
+            }
+        );
+    }

@@ -4,21 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File a Complaint - CAIR Michigan</title>
+    <title>Report an Incident - CAIR Michigan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav-contact.css">
-    <link rel="stylesheet" href="complaint.css">
+    <link rel="stylesheet" href="report-incident.css">
     <link rel="stylesheet" href="footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-<link rel="stylesheet" href="nav-contact.css">
-<link rel="stylesheet" href="complaint.css">
-<link rel="stylesheet" href="footer.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,8 +32,7 @@
                 <a href="index.html#pillars" class="nav-link">Our Work</a>
                 <a href="request-speaker.html" class="nav-link">Request a Speaker</a>
                 <a href="file-complaint.html" class="nav-link active"
-                    style="color: var(--color-orange); font-weight: 700;">Report
-                    Incident</a>
+                    style="color: var(--color-orange); font-weight: 700;">Report Incident</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
 
@@ -54,220 +48,497 @@
     </header>
 
     <main>
-        <!-- Complaint Hero -->
-        <section class="complaint-hero">
-            <h1>File a Civil Rights Complaint</h1>
-            <p>If you believe you have been a victim of discrimination, harassment, or a hate crime, our legal
-                department is here to review your case.</p>
-        </section>
-
-        <!-- Process Steps -->
-        <section class="process-section">
-            <div class="process-step active">
-                <div class="step-circle"><i class="ri-edit-line"></i></div>
-                <span class="step-label">1. Submit Details</span>
-            </div>
-            <div class="process-step">
-                <div class="step-circle">2</div>
-                <span class="step-label">2. Legal Review</span>
-            </div>
-            <div class="process-step">
-                <div class="step-circle">3</div>
-                <span class="step-label">3. Action Plan</span>
-            </div>
-        </section>
-
-        <!-- Premium Intake Guidance -->
-        <section class="intake-framework">
-
-            <!-- Safety Check -->
-            <div class="safety-check-card">
-                <div class="safety-check-icon"><i class="ri-alarm-warning-line"></i></div>
-                <div class="safety-content">
-                    <h4>Before you proceed: Safety Check</h4>
-                    <p>CAIR Michigan is a legal advocacy organization, not an emergency response unit. If you or others
-                        are in immediate physical danger, please contact 911 or local emergency services immediately.
-                    </p>
+        <!-- Hero Section -->
+        <section class="report-hero">
+            <div class="report-hero-content">
+                <div class="hero-badge urgent">
+                    <i class="ri-shield-check-line"></i>
+                    <span>Confidential Reporting</span>
                 </div>
-            </div>
-
-            <!-- Mandate & Referral Grid -->
-            <div class="mandate-container">
-
-                <!-- Our Mandate -->
-                <div class="mandate-card-primary">
-                    <div class="mandate-title"><i class="ri-scales-3-line"></i> Our Legal Mandate</div>
-                    <div class="focus-areas-grid">
-                        <div class="focus-item">
-                            <i class="ri-briefcase-4-line focus-icon"></i>
-                            <div class="focus-text">Employment</div>
-                            <div class="focus-sub">Discrimination, Hiring Bias, Accommodations</div>
-                        </div>
-                        <div class="focus-item">
-                            <i class="ri-school-line focus-icon"></i>
-                            <div class="focus-text">Education</div>
-                            <div class="focus-sub">Bullying, Hijab Bans, Admin Bias</div>
-                        </div>
-                        <div class="focus-item">
-                            <i class="ri-government-line focus-icon"></i>
-                            <div class="focus-text">Law Enforct</div>
-                            <div class="focus-sub">Police Misconduct, FBI Interrogations</div>
-                        </div>
-                        <div class="focus-item">
-                            <i class="ri-passport-line focus-icon"></i>
-                            <div class="focus-text">Travel & Border</div>
-                            <div class="focus-sub">No-Fly List, Airport Profiling</div>
-                        </div>
-                        <div class="focus-item">
-                            <i class="ri-megaphone-line focus-icon"></i>
-                            <div class="focus-text">Hate Speech</div>
-                            <div class="focus-sub">Public Harassment, Incitement</div>
-                        </div>
-                        <div class="focus-item">
-                            <i class="ri-building-line focus-icon"></i>
-                            <div class="focus-text">Public Access</div>
-                            <div class="focus-sub">Denial of Services, Shopping</div>
-                        </div>
+                <h1>Report a <span class="text-highlight">Civil Rights</span> Incident</h1>
+                <p>If you've experienced discrimination, harassment, or a hate crime, our legal team is here to help. All reports are confidential and reviewed by our Civil Rights Department.</p>
+                
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <i class="ri-lock-line"></i>
+                        <span>100% Confidential</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="ri-time-line"></i>
+                        <span>24-48hr Response</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="ri-money-dollar-circle-line"></i>
+                        <span>Free Legal Help</span>
                     </div>
                 </div>
-
-                <!-- Referrals -->
-                <div class="mandate-card-secondary">
-                    <div class="mandate-title secondary"><i class="ri-share-forward-line"></i> Out of Scope</div>
-                    <ul class="exclusion-list">
-                        <li class="exclusion-item"><span class="dot-indicator"></span> General Criminal Defense</li>
-                        <li class="exclusion-item"><span class="dot-indicator"></span> Divorce & Family Law</li>
-                        <li class="exclusion-item"><span class="dot-indicator"></span> Immigration Applications</li>
-                        <li class="exclusion-item"><span class="dot-indicator"></span> Personal Injury Suits</li>
-                        <li class="exclusion-item"><span class="dot-indicator"></span> Contract/Property Disputes</li>
-                    </ul>
-                    <div class="referral-note">
-                        *For these issues, we recommend contacting the State Bar of Michigan or specialized private
-                        counsel.
+            </div>
+            <div class="report-hero-visual">
+                <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&q=80" alt="Legal justice">
+                <div class="hero-stats-card">
+                    <div class="stat-item">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Cases Handled</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">89%</span>
+                        <span class="stat-label">Success Rate</span>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <div class="complaint-container">
-
-            <!-- Confidentiality Disclaimer -->
-            <div class="disclaimer-box">
-                <i class="ri-lock-2-line disclaimer-icon"></i>
-                <div>
-                    <h4>Confidential & Secure</h4>
-                    <p style="margin:0; font-size:15px; color:var(--color-text-grey);">All information submitted via
-                        this form is privileged and confidential. It will be reviewed solely by our Civil Rights
-                        Department attorneys and staff.</p>
+        <!-- Emergency Banner -->
+        <section class="emergency-banner">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="ri-alarm-warning-line"></i>
                 </div>
+                <div class="emergency-text">
+                    <h4>In Immediate Danger?</h4>
+                    <p>If you or someone else is in physical danger, please call <strong>911</strong> immediately. CAIR Michigan is a legal advocacy organization, not emergency services.</p>
+                </div>
+                <a href="tel:911" class="emergency-btn">
+                    <i class="ri-phone-line"></i> Call 911
+                </a>
+            </div>
+        </section>
+
+        <!-- Process Timeline -->
+        <section class="process-timeline">
+            <div class="timeline-header">
+                <div class="label-pill">
+                    <span class="dot blue-dot"></span>
+                    How It Works
+                </div>
+                <h2>Our Simple 3-Step Process</h2>
+                <p>From report to resolution, we guide you every step of the way</p>
             </div>
 
-            <form class="contact-form-container"
-                style="max-width: 100%; box-shadow: none; border: 1px solid var(--color-light-gray);">
-
-                <!-- Section 1: Victim Info -->
-                <div class="form-section-title">
-                    <i class="ri-user-line form-section-icon"></i> Personal Information
+            <div class="timeline-steps">
+                <div class="timeline-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="ri-file-text-line"></i></div>
+                    <h3>Submit Your Report</h3>
+                    <p>Fill out the secure form below with details about your incident. Include as much information as possible.</p>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" class="form-input" placeholder="Victim's Name">
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="ri-search-eye-line"></i></div>
+                    <h3>Legal Review</h3>
+                    <p>Our civil rights attorneys review your case within 24-48 hours and assess the best course of action.</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="ri-shield-star-line"></i></div>
+                    <h3>Action & Support</h3>
+                    <p>We develop a personalized action plan and provide ongoing legal support throughout your case.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Handle Section -->
+        <section class="cases-section">
+            <div class="cases-container">
+                <div class="cases-header">
+                    <div class="label-pill">
+                        <span class="dot pink-dot"></span>
+                        Our Expertise
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Phone Number</label>
-                        <input type="tel" class="form-input" placeholder="(555) 123-4567">
+                    <h2>Types of Cases We Handle</h2>
+                    <p>Our legal team specializes in civil rights violations affecting the Muslim community</p>
+                </div>
+
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <i class="ri-briefcase-4-line"></i>
+                        </div>
+                        <h3>Employment Discrimination</h3>
+                        <p>Wrongful termination, hiring bias, religious accommodation denials, workplace harassment</p>
+                        <ul class="case-examples">
+                            <li>Denied prayer breaks</li>
+                            <li>Hijab/beard restrictions</li>
+                            <li>Hostile work environment</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <i class="ri-school-line"></i>
+                        </div>
+                        <h3>Education & Schools</h3>
+                        <p>Student bullying, administrative bias, religious expression restrictions</p>
+                        <ul class="case-examples">
+                            <li>Bullying & harassment</li>
+                            <li>Dress code violations</li>
+                            <li>Curriculum bias</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <i class="ri-police-car-line"></i>
+                        </div>
+                        <h3>Law Enforcement</h3>
+                        <p>Police misconduct, FBI interrogations, surveillance, profiling</p>
+                        <ul class="case-examples">
+                            <li>Unlawful questioning</li>
+                            <li>Profiling incidents</li>
+                            <li>Excessive force</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <i class="ri-flight-takeoff-line"></i>
+                        </div>
+                        <h3>Travel & Border</h3>
+                        <p>Airport profiling, no-fly list issues, CBP encounters, visa problems</p>
+                        <ul class="case-examples">
+                            <li>Secondary screening</li>
+                            <li>Device searches</li>
+                            <li>Entry denials</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <i class="ri-chat-delete-line"></i>
+                        </div>
+                        <h3>Hate Crimes & Speech</h3>
+                        <p>Physical attacks, verbal harassment, vandalism, online threats</p>
+                        <ul class="case-examples">
+                            <li>Physical assaults</li>
+                            <li>Property damage</li>
+                            <li>Threatening messages</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-card">
+                        <div class="case-icon">
+                            <i class="ri-store-2-line"></i>
+                        </div>
+                        <h3>Public Accommodations</h3>
+                        <p>Denial of services, restaurant/store discrimination, housing bias</p>
+                        <ul class="case-examples">
+                            <li>Service refusals</li>
+                            <li>Housing discrimination</li>
+                            <li>Public facility access</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label">Email Address</label>
-                        <input type="email" class="form-input" placeholder="email@address.com">
+
+                <!-- Out of Scope Notice -->
+                <div class="scope-notice">
+                    <div class="scope-icon"><i class="ri-information-line"></i></div>
+                    <div class="scope-content">
+                        <h4>Cases Outside Our Scope</h4>
+                        <p>We do not handle: General criminal defense, divorce/family law, immigration applications, personal injury, or contract disputes. For these matters, contact the <a href="#">State Bar of Michigan</a>.</p>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">City/Location</label>
-                        <input type="text" class="form-input" placeholder="e.g. Dearborn, Detroit">
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Form Section -->
+        <section id="report-form" class="report-form-section">
+            <div class="form-section-header">
+                <h2>Submit Your Report</h2>
+                <p>All information is encrypted and kept strictly confidential</p>
+            </div>
+
+            <div class="report-form-wrapper">
+                <!-- Main Form -->
+                <form class="report-form">
+                    <!-- Security Notice -->
+                    <div class="security-badge">
+                        <i class="ri-shield-check-line"></i>
+                        <span>256-bit SSL Encrypted • Attorney-Client Privilege Protected</span>
+                    </div>
+
+                    <!-- Step 1: Personal Info -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <span class="step-badge">Step 1</span>
+                            <h3>Your Information</h3>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" class="form-input" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number <span class="required">*</span></label>
+                                <input type="tel" class="form-input" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" class="form-input" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">City / Location <span class="required">*</span></label>
+                                <input type="text" class="form-input" placeholder="e.g. Detroit, Dearborn" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Contact Method</label>
+                            <div class="contact-method-options">
+                                <label class="method-option">
+                                    <input type="radio" name="contact_method" value="phone" checked>
+                                    <span><i class="ri-phone-line"></i> Phone</span>
+                                </label>
+                                <label class="method-option">
+                                    <input type="radio" name="contact_method" value="email">
+                                    <span><i class="ri-mail-line"></i> Email</span>
+                                </label>
+                                <label class="method-option">
+                                    <input type="radio" name="contact_method" value="either">
+                                    <span><i class="ri-chat-check-line"></i> Either</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Incident Type -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <span class="step-badge">Step 2</span>
+                            <h3>Incident Type</h3>
+                        </div>
+
+                        <label class="form-label">Select the category that best describes your incident <span class="required">*</span></label>
+                        <div class="incident-cards">
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="employment">
+                                <div class="card-content">
+                                    <i class="ri-briefcase-line"></i>
+                                    <span>Employment</span>
+                                </div>
+                            </label>
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="education">
+                                <div class="card-content">
+                                    <i class="ri-school-line"></i>
+                                    <span>Education</span>
+                                </div>
+                            </label>
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="law_enforcement">
+                                <div class="card-content">
+                                    <i class="ri-police-car-line"></i>
+                                    <span>Law Enforcement</span>
+                                </div>
+                            </label>
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="travel">
+                                <div class="card-content">
+                                    <i class="ri-flight-takeoff-line"></i>
+                                    <span>Travel / Border</span>
+                                </div>
+                            </label>
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="hate_crime">
+                                <div class="card-content">
+                                    <i class="ri-alarm-warning-line"></i>
+                                    <span>Hate Crime</span>
+                                </div>
+                            </label>
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="public">
+                                <div class="card-content">
+                                    <i class="ri-store-2-line"></i>
+                                    <span>Public Access</span>
+                                </div>
+                            </label>
+                            <label class="incident-card">
+                                <input type="radio" name="incident_type" value="other">
+                                <div class="card-content">
+                                    <i class="ri-more-line"></i>
+                                    <span>Other</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Incident Details -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <span class="step-badge">Step 3</span>
+                            <h3>Incident Details</h3>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Date of Incident <span class="required">*</span></label>
+                                <input type="date" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Location of Incident</label>
+                                <input type="text" class="form-input" placeholder="Address or general location">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Describe What Happened <span class="required">*</span></label>
+                            <textarea class="form-textarea" rows="6" placeholder="Please provide as much detail as possible. Include names of individuals involved, what was said or done, and any witnesses present." required></textarea>
+                            <span class="form-hint">The more detail you provide, the better we can assess your case.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Names of Parties Involved</label>
+                            <input type="text" class="form-input" placeholder="Names of individuals, companies, or agencies involved">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Witnesses (Optional)</label>
+                            <input type="text" class="form-input" placeholder="Names and contact info of any witnesses">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Do you have documentation?</label>
+                            <div class="checkbox-options">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="docs" value="photos">
+                                    <span>Photos/Videos</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="docs" value="emails">
+                                    <span>Emails/Messages</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="docs" value="police">
+                                    <span>Police Report</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="docs" value="medical">
+                                    <span>Medical Records</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="docs" value="other">
+                                    <span>Other Documents</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Section -->
+                    <div class="form-submit">
+                        <div class="submit-agreement">
+                            <label class="agreement-checkbox">
+                                <input type="checkbox" required>
+                                <span>I confirm that the information provided is accurate to the best of my knowledge and I consent to CAIR Michigan contacting me regarding this report.</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary-lg btn-submit-report">
+                            <i class="ri-shield-check-line"></i>
+                            <span>Submit Confidential Report</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Sidebar -->
+                <aside class="report-sidebar">
+                    <div class="sidebar-card help-card">
+                        <div class="help-icon"><i class="ri-question-line"></i></div>
+                        <h4>Need Help?</h4>
+                        <p>If you prefer to speak with someone directly, our intake team is available.</p>
+                        <a href="tel:+12485592247" class="help-phone">
+                            <i class="ri-phone-line"></i>
+                            (248) 559-2247
+                        </a>
+                        <span class="help-hours">Mon-Fri, 9AM-5PM EST</span>
+                    </div>
+
+                    <div class="sidebar-card checklist-card">
+                        <h4><i class="ri-checkbox-circle-line"></i> What to Include</h4>
+                        <ul class="checklist">
+                            <li><i class="ri-check-line"></i> Date and location of incident</li>
+                            <li><i class="ri-check-line"></i> Names of people involved</li>
+                            <li><i class="ri-check-line"></i> Detailed description</li>
+                            <li><i class="ri-check-line"></i> Any witness information</li>
+                            <li><i class="ri-check-line"></i> Supporting documentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card privacy-card">
+                        <h4><i class="ri-lock-line"></i> Your Privacy</h4>
+                        <p>All information is protected by attorney-client privilege and will never be shared without your explicit consent.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section-new">
+            <div class="testimonials-container">
+                <div class="testimonials-header">
+                    <h2>We've Helped Thousands</h2>
+                    <p>Real stories from community members we've supported</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card-new">
+                        <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                        <p>"CAIR Michigan helped me fight workplace discrimination. Their legal team was professional, compassionate, and got results."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <span class="author-name">Ahmed K.</span>
+                                <span class="author-case">Employment Case</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card-new">
+                        <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                        <p>"When my daughter faced bullying at school, CAIR stepped in and worked with the administration to create real change."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">F</div>
+                            <div class="author-info">
+                                <span class="author-name">Fatima M.</span>
+                                <span class="author-case">Education Case</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card-new">
+                        <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                        <p>"After being wrongfully detained at the airport, CAIR's attorneys helped me understand my rights and resolve the issue."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">Y</div>
+                            <div class="author-info">
+                                <span class="author-name">Yusuf R.</span>
+                                <span class="author-case">Travel Case</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Section 2: Incident Type -->
-                <div class="form-section-title" style="margin-top: 40px;">
-                    <i class="ri-alert-line form-section-icon"></i> Incident Details
+        <!-- CTA Section -->
+        <section class="report-cta">
+            <div class="cta-content">
+                <h2>Know Your Rights</h2>
+                <p>Download our free guides on civil rights, interactions with law enforcement, and workplace protections.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary-lg">
+                        <i class="ri-download-line"></i> Download Guides
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light">
+                        <i class="ri-customer-service-line"></i> Contact Us
+                    </a>
                 </div>
-                <label class="form-label">Type of Incident (Select one)</label>
-                <div class="incident-type-grid">
-                    <label>
-                        <input type="radio" name="incident_type" class="type-checkbox">
-                        <div class="type-card">
-                            <i class="ri-briefcase-line type-icon"></i>
-                            <span>Employment</span>
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="incident_type" class="type-checkbox">
-                        <div class="type-card">
-                            <i class="ri-bank-line type-icon"></i>
-                            <span>School/Education</span>
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="incident_type" class="type-checkbox">
-                        <div class="type-card">
-                            <i class="ri-police-car-line type-icon"></i>
-                            <span>Law Enforcnt</span>
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="incident_type" class="type-checkbox">
-                        <div class="type-card">
-                            <i class="ri-flight-takeoff-line type-icon"></i>
-                            <span>Travel/FBI</span>
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="incident_type" class="type-checkbox">
-                        <div class="type-card">
-                            <i class="ri-chat-delete-line type-icon"></i>
-                            <span>Hate Crime</span>
-                        </div>
-                    </label>
-                    <label>
-                        <input type="radio" name="incident_type" class="type-checkbox">
-                        <div class="type-card">
-                            <i class="ri-question-line type-icon"></i>
-                            <span>Other</span>
-                        </div>
-                    </label>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Date Used Occurred</label>
-                    <input type="date" class="form-input">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Description of Incident</label>
-                    <textarea class="form-textarea"
-                        placeholder="Please describe what happened in detail. Include names of officers, employers, or schools involved if applicable."
-                        style="min-height: 200px;"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Witnesses (Optional)</label>
-                    <input type="text" class="form-input" placeholder="Names and contact info of any witnesses">
-                </div>
-
-                <!-- Submit -->
-                <div style="margin-top: 40px; text-align: right;">
-                    <p style="font-size: 14px; color: var(--color-text-grey); margin-bottom: 16px;">By clicking submit,
-                        you attest that the information provided is true to the best of your knowledge.</p>
-                    <button type="submit" class="btn btn-primary-lg"
-                        style="width: auto; padding-left: 60px; padding-right: 60px;">Submit Complaint</button>
-                </div>
-
-            </form>
-        </div>
+            </div>
+        </section>
 
     </main>
 
@@ -275,8 +546,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3><i class="ri-scales-3-line" style="color:var(--color-blue)"></i> CAIR MI</h3>
-                <p>Defending civil rights, enhancing understanding of Islam, promoting justice, and empowering American
-                    Muslims.</p>
+                <p>Defending civil rights, enhancing understanding of Islam, promoting justice, and empowering American Muslims.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="ri-twitter-x-line"></i></a>
                     <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
@@ -300,7 +570,7 @@
                     <li><a href="#">Know Your Rights</a></li>
                     <li><a href="#">Community Alerts</a></li>
                     <li><a href="#">Legal Services</a></li>
-                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="request-speaker.html">Request a Speaker</a></li>
                 </ul>
             </div>
 
