@@ -2,63 +2,106 @@
    CONTACT PAGE - MODERN REDESIGN
    ============================================ */
 
-/* Simple Page Hero */
-.page-hero {
-    text-align: center;
-    padding: 160px 40px 80px;
-    background: linear-gradient(180deg, #2F68C4 0%, #1E3A8A 100%);
-    background-color: #2F68C4;
-    border-radius: 0 0 40px 40px;
+/* Page Header Strip */
+.page-header-strip {
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
+    padding: 140px 40px 60px;
+    color: white;
 }
 
-.page-hero-content {
-    max-width: 700px;
+.page-header-strip.orange {
+    background: linear-gradient(135deg, var(--color-orange) 0%, #EA580C 100%);
+}
+
+.header-strip-content {
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-.page-hero h1 {
-    font-size: 52px;
-    line-height: 1.15;
-    letter-spacing: -1.5px;
-    margin: 0 0 20px;
-    color: white !important;
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
-.page-hero p {
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+}
+
+.breadcrumb i {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.page-header-strip h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.page-header-strip p {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.9) !important;
-    line-height: 1.7;
-    margin: 0 0 32px;
+    opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
-.hero-quick-actions {
+.header-quick-actions {
     display: flex;
     gap: 24px;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 28px;
 }
 
 .quick-action {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: white;
-    font-weight: 600;
-    font-size: 16px;
     text-decoration: none;
-    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 12px 20px;
     background: rgba(255, 255, 255, 0.15);
-    padding: 12px 24px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.quick-action i {
-    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
 }
 
 .quick-action:hover {
     background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.quick-action i {
+    font-size: 20px;
+}
+
+.header-trust-badges {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.trust-item i {
+    font-size: 18px;
 }
 
 /* Contact Methods Section */
@@ -606,12 +649,21 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .page-hero {
-        padding-top: 140px;
+    .page-header-strip {
+        padding: 120px 40px 50px;
     }
 
-    .page-hero h1 {
+    .page-header-strip h1 {
         font-size: 40px;
+    }
+
+    .header-quick-actions {
+        flex-wrap: wrap;
+    }
+
+    .header-trust-badges {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .methods-grid {
@@ -640,17 +692,26 @@
 }
 
 @media (max-width: 768px) {
-    .page-hero {
-        padding: 120px 20px 60px;
+    .page-header-strip {
+        padding: 110px 20px 40px;
     }
 
-    .page-hero h1 {
+    .page-header-strip h1 {
         font-size: 32px;
     }
 
-    .hero-quick-actions {
+    .header-quick-actions {
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
+    }
+
+    .quick-action {
+        justify-content: center;
+    }
+
+    .header-trust-badges {
+        flex-direction: column;
+        gap: 12px;
     }
 
     .methods-grid {

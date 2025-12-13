@@ -94,34 +94,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ============================================
-    // CONTACT PAGE ANIMATIONS (NEW DESIGN)
+    // PAGE HEADER STRIP ANIMATIONS
     // ============================================
 
-    // Simple Page Hero Animation
-    const pageHero = document.querySelector('.page-hero');
-    if (pageHero) {
-        const heroTl = gsap.timeline();
+    // Page Header Strip
+    const pageHeaderStrip = document.querySelector('.page-header-strip');
+    if (pageHeaderStrip) {
+        const headerTl = gsap.timeline();
         
-        heroTl.from('.page-hero h1', {
-            opacity: 0,
-            y: 40,
-            duration: 0.7,
-            ease: 'power3.out'
-        })
-        .from('.page-hero p', {
-            opacity: 0,
-            y: 30,
-            duration: 0.5,
-            ease: 'power3.out'
-        }, '-=0.4')
-        .from('.hero-quick-actions .quick-action, .hero-trust-pills .trust-pill', {
+        headerTl.from('.breadcrumb', {
             opacity: 0,
             y: 20,
+            duration: 0.4,
+            ease: 'power3.out'
+        })
+        .from('.page-header-strip h1', {
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            ease: 'power3.out'
+        }, '-=0.2')
+        .from('.page-header-strip p', {
+            opacity: 0,
+            y: 20,
+            duration: 0.5,
+            ease: 'power3.out'
+        }, '-=0.3')
+        .from('.header-quick-actions .quick-action, .header-trust-badges .trust-item', {
+            opacity: 0,
+            y: 15,
             stagger: 0.1,
             duration: 0.4,
             ease: 'power2.out'
         }, '-=0.2');
     }
+
+    // Quick action hover
+    document.querySelectorAll('.quick-action').forEach(action => {
+        action.addEventListener('mouseenter', () => {
+            gsap.to(action, { y: -3, scale: 1.02, duration: 0.2, ease: 'power2.out' });
+        });
+        action.addEventListener('mouseleave', () => {
+            gsap.to(action, { y: 0, scale: 1, duration: 0.2, ease: 'power2.out' });
+        });
+    });
 
     // Contact Methods Section
     const contactMethods = document.querySelector('.contact-methods');
@@ -981,8 +997,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================
     // REPORT INCIDENT PAGE ANIMATIONS (NEW DESIGN)
     // ============================================
-
-    // Report Hero (uses same .page-hero class now, handled above)
 
     // Emergency Banner
     const emergencyBanner = document.querySelector('.emergency-banner');

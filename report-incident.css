@@ -2,58 +2,77 @@
    REPORT INCIDENT PAGE - MODERN REDESIGN
    ============================================ */
 
-/* Simple Page Hero */
-.page-hero {
-    text-align: center;
-    padding: 160px 40px 80px;
-    background: linear-gradient(180deg, #2F68C4 0%, #1E3A8A 100%);
-    background-color: #2F68C4;
-    border-radius: 0 0 40px 40px;
+/* Page Header Strip */
+.page-header-strip {
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
+    padding: 140px 40px 60px;
+    color: white;
 }
 
-.page-hero-content {
-    max-width: 750px;
+.page-header-strip.orange {
+    background: linear-gradient(135deg, var(--color-orange) 0%, #EA580C 100%);
+}
+
+.header-strip-content {
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-.page-hero h1 {
-    font-size: 48px;
-    line-height: 1.15;
-    letter-spacing: -1.5px;
-    margin: 0 0 20px;
-    color: white !important;
-}
-
-.page-hero p {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.9) !important;
-    line-height: 1.7;
-    margin: 0 0 32px;
-}
-
-.hero-trust-pills {
+.breadcrumb {
     display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.trust-pill {
-    display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
     font-size: 14px;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
-.trust-pill i {
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+}
+
+.breadcrumb i {
     font-size: 16px;
+    opacity: 0.6;
+}
+
+.page-header-strip h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.page-header-strip p {
+    font-size: 18px;
     opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.header-trust-badges {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.trust-item i {
+    font-size: 18px;
 }
 
 /* Emergency Banner */
@@ -908,16 +927,17 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .page-hero {
-        padding-top: 140px;
+    .page-header-strip {
+        padding: 120px 40px 50px;
     }
 
-    .page-hero h1 {
-        font-size: 38px;
+    .page-header-strip h1 {
+        font-size: 40px;
     }
 
-    .hero-trust-pills {
-        gap: 12px;
+    .header-trust-badges {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .timeline-steps {
@@ -960,21 +980,17 @@
 }
 
 @media (max-width: 768px) {
-    .page-hero {
-        padding: 120px 20px 60px;
+    .page-header-strip {
+        padding: 110px 20px 40px;
     }
 
-    .page-hero {
-        border-radius: 0 0 24px 24px;
+    .page-header-strip h1 {
+        font-size: 32px;
     }
 
-    .page-hero h1 {
-        font-size: 30px;
-    }
-
-    .hero-trust-pills {
+    .header-trust-badges {
         flex-direction: column;
-        align-items: center;
+        gap: 12px;
     }
 
     .emergency-content {
