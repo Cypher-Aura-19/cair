@@ -102,31 +102,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pageHeaderStrip) {
         const headerTl = gsap.timeline();
         
-        headerTl.from('.breadcrumb', {
-            opacity: 0,
-            y: 20,
-            duration: 0.4,
-            ease: 'power3.out'
-        })
-        .from('.page-header-strip h1', {
-            opacity: 0,
-            y: 30,
-            duration: 0.6,
-            ease: 'power3.out'
-        }, '-=0.2')
-        .from('.page-header-strip p', {
-            opacity: 0,
-            y: 20,
-            duration: 0.5,
-            ease: 'power3.out'
-        }, '-=0.3')
-        .from('.header-quick-actions .quick-action, .header-trust-badges .trust-item', {
-            opacity: 0,
-            y: 15,
-            stagger: 0.1,
-            duration: 0.4,
-            ease: 'power2.out'
-        }, '-=0.2');
+        headerTl.fromTo('.breadcrumb', 
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }
+        )
+        .fromTo('.page-header-strip h1', 
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' },
+            '-=0.2'
+        )
+        .fromTo('.page-header-strip p', 
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out' },
+            '-=0.3'
+        )
+        .fromTo('.header-quick-actions .quick-action, .header-trust-badges .trust-item', 
+            { opacity: 0, y: 15 },
+            { opacity: 1, y: 0, stagger: 0.1, duration: 0.4, ease: 'power2.out' },
+            '-=0.2'
+        );
     }
 
     // Quick action hover
