@@ -97,7 +97,116 @@ document.addEventListener('DOMContentLoaded', () => {
     // CONTACT PAGE ANIMATIONS
     // ============================================
 
-    // Contact Hero
+    // Enhanced Contact Hero
+    const contactHeroEnhanced = document.querySelector('.contact-hero-enhanced');
+    if (contactHeroEnhanced) {
+        const heroTl = gsap.timeline();
+        
+        heroTl.from('.hero-badge-pill', {
+            opacity: 0,
+            y: 30,
+            duration: 0.5,
+            ease: 'power3.out'
+        })
+        .from('.contact-hero-enhanced h1', {
+            opacity: 0,
+            y: 60,
+            duration: 0.8,
+            ease: 'power3.out'
+        }, '-=0.3')
+        .from('.hero-content-left > p', {
+            opacity: 0,
+            y: 40,
+            duration: 0.6,
+            ease: 'power3.out'
+        }, '-=0.4')
+        .from('.trust-item', {
+            opacity: 0,
+            y: 20,
+            stagger: 0.1,
+            duration: 0.4,
+            ease: 'power2.out'
+        }, '-=0.3')
+        .from('.hero-image-right > img', {
+            opacity: 0,
+            scale: 0.95,
+            duration: 0.8,
+            ease: 'power3.out'
+        }, '-=0.6')
+        .from('.hero-floating-card', {
+            opacity: 0,
+            x: -30,
+            y: 20,
+            duration: 0.6,
+            ease: 'back.out(1.5)'
+        }, '-=0.3');
+
+        // Floating card subtle animation
+        gsap.to('.hero-floating-card', {
+            y: -8,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut',
+            delay: 1.5
+        });
+    }
+
+    // Quick Actions
+    const quickActions = document.querySelector('.quick-actions-section');
+    if (quickActions) {
+        gsap.fromTo('.quick-action-card',
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: quickActions,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                stagger: 0.15,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Quick action card hover
+    document.querySelectorAll('.quick-action-card').forEach(card => {
+        const icon = card.querySelector('.action-icon');
+        const arrow = card.querySelector('.action-arrow');
+        
+        card.addEventListener('mouseenter', () => {
+            gsap.to(icon, { scale: 1.1, rotation: 5, duration: 0.3, ease: 'back.out(2)' });
+            gsap.to(arrow, { x: 5, duration: 0.25, ease: 'power2.out' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(icon, { scale: 1, rotation: 0, duration: 0.3, ease: 'power2.out' });
+            gsap.to(arrow, { x: 0, duration: 0.25, ease: 'power2.out' });
+        });
+    });
+
+    // Section intro
+    const sectionIntro = document.querySelector('.section-intro');
+    if (sectionIntro) {
+        gsap.fromTo('.section-intro',
+            { opacity: 0, y: 30 },
+            {
+                scrollTrigger: {
+                    trigger: sectionIntro,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Contact Hero (legacy fallback)
     const contactHero = document.querySelector('.contact-hero');
     if (contactHero) {
         const tl = gsap.timeline();
