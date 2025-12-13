@@ -1,0 +1,350 @@
+/* --- Complaint Page Specifics --- */
+.complaint-hero {
+    background-color: var(--color-blue);
+    color: white;
+    padding: 160px 20px 80px;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 60px;
+}
+
+.complaint-hero h1 {
+    font-size: 56px;
+    margin-bottom: 24px;
+}
+
+.complaint-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Process Steps */
+.process-section {
+    max-width: 1400px;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 40px;
+}
+
+.process-section::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 80px;
+    right: 80px;
+    height: 2px;
+    background: var(--color-light-gray);
+    z-index: 0;
+}
+
+.process-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 2px solid var(--color-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--color-blue);
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.process-step.active .step-circle {
+    background: var(--color-blue);
+    color: white;
+}
+
+.step-label {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-text-dark);
+}
+
+/* --- Premium Intake Framework --- */
+.intake-framework {
+    max-width: 1400px;
+    margin: 0 auto 100px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+}
+
+/* Safety Check */
+.safety-check-card {
+    background: #FFFBF6;
+    border: 1px solid rgba(247, 151, 34, 0.3);
+    border-left: 6px solid var(--color-orange);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    box-shadow: 0 15px 40px rgba(247, 151, 34, 0.08);
+}
+
+.safety-check-icon {
+    font-size: 32px;
+    color: var(--color-orange);
+    background: rgba(247, 151, 34, 0.1);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.safety-content h4 {
+    margin: 0 0 8px 0;
+    color: #92400E;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.safety-content p {
+    margin: 0;
+    color: #5D4037;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Legal Mandate Grid */
+.mandate-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* Primary Scope Card */
+.mandate-card-primary {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%);
+    border: 1px solid rgba(47, 104, 196, 0.15);
+    border-radius: 32px;
+    padding: 48px;
+    box-shadow: 0 20px 40px rgba(47, 104, 196, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.mandate-card-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--color-blue);
+}
+
+.mandate-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-blue);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.focus-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for wider layout */
+    gap: 32px;
+}
+
+.focus-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.focus-icon {
+    font-size: 24px;
+    color: var(--color-blue);
+}
+
+.focus-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-text-dark);
+}
+
+.focus-sub {
+    font-size: 14px;
+    color: var(--color-text-grey);
+    line-height: 1.5;
+}
+
+/* Referral Card */
+.mandate-card-secondary {
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    border-radius: 32px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mandate-title.secondary {
+    color: var(--color-text-dark);
+}
+
+.exclusion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exclusion-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--color-text-grey);
+    font-size: 16px;
+}
+
+.dot-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #DDDDDD;
+}
+
+.referral-note {
+    margin-top: auto;
+    padding-top: 32px;
+    border-top: 1px solid #EEEEEE;
+    font-size: 14px;
+    color: var(--color-text-grey);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Complaint Form */
+.complaint-container {
+    max-width: 1200px;
+    margin: 0 auto 120px;
+    padding: 0 40px;
+}
+
+.form-section-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-light-gray);
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.incident-type-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Full width row */
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.type-checkbox {
+    display: none;
+}
+
+.type-card {
+    border: 1px solid var(--color-light-gray);
+    border-radius: 16px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 100%;
+}
+
+.type-card:hover {
+    border-color: var(--color-blue);
+    background: rgba(47, 104, 196, 0.05);
+    transform: translateY(-2px);
+}
+
+.type-checkbox:checked+.type-card {
+    background: var(--color-blue);
+    color: white;
+    border-color: var(--color-blue);
+}
+
+.type-icon {
+    font-size: 32px;
+}
+
+/* Disclaimer */
+.disclaimer-box {
+    background: #FFF8F0;
+    border: 1px solid var(--color-orange);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.disclaimer-icon {
+    color: var(--color-orange);
+    font-size: 32px;
+}
+
+@media (max-width: 1100px) {
+    .mandate-container {
+        grid-template-columns: 1fr;
+    }
+
+    .focus-areas-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .incident-type-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .incident-type-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-section {
+        display: none;
+        /* Hide steps on mobile */
+    }
+}

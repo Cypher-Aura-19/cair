@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CAIR Michigan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-contact.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="ri-scales-3-line logo-icon-font"></i>
+                <span class="logo-text">CAIR <span class="logo-sub">Michigan</span></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#pillars" class="nav-link">Our Work</a>
+                <a href="request-speaker.html" class="nav-link">Request a Speaker</a>
+                <a href="file-complaint.html" class="nav-link"
+                    style="color: var(--color-orange); font-weight: 700;">Report Incident</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary-sm">Donate</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>Whether you need legal assistance, want to volunteer, or have a general inquiry, we are here to help.</p>
+        </section>
+
+        <!-- Contact Content Split -->
+        <div class="contact-wrapper">
+
+            <!-- Left: Form -->
+            <div class="contact-form-container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-input" placeholder="e.g. Sarah">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-input" placeholder="e.g. Connor">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone (Optional)</label>
+                            <input type="tel" class="form-input" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <select class="form-input">
+                            <option>General Inquiry</option>
+                            <option>Report an Incident</option>
+                            <option>Press/Media</option>
+                            <option>Volunteering</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary-lg" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right: Info -->
+            <div class="contact-info-sidebar">
+                <div class="info-card">
+                    <h3>Contact Info</h3>
+
+                    <div class="info-item">
+                        <span class="info-icon"><i class="ri-map-pin-line"></i></span>
+                        <div class="info-content">
+                            <h5>Visit Us</h5>
+                            <p>30201 Orchard Lake Rd,<br>Farmington Hills, MI 48334</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon"><i class="ri-phone-line"></i></span>
+                        <div class="info-content">
+                            <h5>Call Us</h5>
+                            <p>(248) 559-2247</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon"><i class="ri-mail-line"></i></span>
+                        <div class="info-content">
+                            <h5>Email Us</h5>
+                            <p>info@cairmichigan.org</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <!-- Placeholder map background via CSS -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services and advocacy.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do I report a civil rights violation?</h4>
+                    <p>You can use the form above by selecting "Report an Incident" or call our hotline directly. All
+                        reports are confidential.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer free legal representation?</h4>
+                    <p>Yes, for cases that fall within our scope (civil rights, discrimination), we provide pro-bono
+                        legal services.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I have someone speak at my event?</h4>
+                    <p>Select "General Inquiry" in the contact form and provide details about your event, date, and
+                        topic.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is my donation tax-deductible?</h4>
+                    <p>Yes, CAIR Michigan is a registered 501(c)(3) non-profit organization. All donations are
+                        tax-deductible.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="ri-scales-3-line" style="color:var(--color-blue)"></i> CAIR MI</h3>
+                <p>Defending civil rights, enhancing understanding of Islam, promoting justice, and empowering American
+                    Muslims.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="file-complaint.html">Report Incident</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Know Your Rights</a></li>
+                    <li><a href="#">Community Alerts</a></li>
+                    <li><a href="#">Legal Services</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-heading">Stay Updated</h4>
+                <p>Join our newsletter for urgent alerts and community news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="ri-send-plane-fill"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CAIR Michigan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>
