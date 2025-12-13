@@ -15,6 +15,20 @@
     --border-radius-pill: 50px;
 }
 
+/* Global Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    font-family: var(--primary-font, 'Urbanist', sans-serif);
+    margin: 0;
+    padding: 0;
+}
+
 /* --- Sticky Navigation --- */
 .main-header {
     position: fixed;
