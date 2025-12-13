@@ -3,22 +3,23 @@
    ============================================ */
 
 /* Page Header Strip */
-.page-header-strip {
+section.page-header-strip {
     background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
     padding: 140px 40px 60px;
     color: white;
+    text-align: left;
 }
 
-.page-header-strip.orange {
+section.page-header-strip.orange {
     background: linear-gradient(135deg, var(--color-orange) 0%, #EA580C 100%);
 }
 
-.header-strip-content {
+.page-header-strip .header-strip-content {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.breadcrumb {
+.page-header-strip .breadcrumb {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -27,26 +28,28 @@
     opacity: 0.9;
 }
 
-.breadcrumb a {
+.page-header-strip .breadcrumb a {
     color: white;
     text-decoration: none;
     opacity: 0.8;
     transition: opacity 0.2s;
 }
 
-.breadcrumb a:hover {
+.page-header-strip .breadcrumb a:hover {
     opacity: 1;
 }
 
-.breadcrumb i {
+.page-header-strip .breadcrumb i {
     font-size: 16px;
     opacity: 0.6;
 }
 
 .page-header-strip h1 {
-    font-size: 48px;
+    font-size: 48px !important;
     margin-bottom: 16px;
     letter-spacing: -1px;
+    color: white !important;
+    line-height: 1.2;
 }
 
 .page-header-strip p {
@@ -54,15 +57,16 @@
     opacity: 0.9;
     max-width: 600px;
     line-height: 1.6;
+    color: white;
 }
 
-.header-quick-actions {
+.page-header-strip .header-quick-actions {
     display: flex;
     gap: 24px;
     margin-top: 28px;
 }
 
-.quick-action {
+.page-header-strip .quick-action {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -76,31 +80,32 @@
     transition: all 0.2s ease;
 }
 
-.quick-action:hover {
+.page-header-strip .quick-action:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
 }
 
-.quick-action i {
+.page-header-strip .quick-action i {
     font-size: 20px;
 }
 
-.header-trust-badges {
+.page-header-strip .header-trust-badges {
     display: flex;
     gap: 32px;
     margin-top: 28px;
 }
 
-.trust-item {
+.page-header-strip .trust-item {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 14px;
     font-weight: 500;
     opacity: 0.95;
+    color: white;
 }
 
-.trust-item i {
+.page-header-strip .trust-item i {
     font-size: 18px;
 }
 
@@ -649,19 +654,19 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .page-header-strip {
+    section.page-header-strip {
         padding: 120px 40px 50px;
     }
 
     .page-header-strip h1 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
-    .header-quick-actions {
+    .page-header-strip .header-quick-actions {
         flex-wrap: wrap;
     }
 
-    .header-trust-badges {
+    .page-header-strip .header-trust-badges {
         flex-wrap: wrap;
         gap: 20px;
     }
@@ -692,24 +697,24 @@
 }
 
 @media (max-width: 768px) {
-    .page-header-strip {
+    section.page-header-strip {
         padding: 110px 20px 40px;
     }
 
     .page-header-strip h1 {
-        font-size: 32px;
+        font-size: 32px !important;
     }
 
-    .header-quick-actions {
+    .page-header-strip .header-quick-actions {
         flex-direction: column;
         gap: 12px;
     }
 
-    .quick-action {
+    .page-header-strip .quick-action {
         justify-content: center;
     }
 
-    .header-trust-badges {
+    .page-header-strip .header-trust-badges {
         flex-direction: column;
         gap: 12px;
     }

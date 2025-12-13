@@ -226,6 +226,13 @@ h1 {
     color: var(--color-text-dark);
 }
 
+/* Override for page header strips */
+.page-header-strip h1 {
+    font-size: 48px;
+    color: white;
+    letter-spacing: -1px;
+}
+
 .hero-subtext {
     font-weight: 400;
     font-size: 20px;

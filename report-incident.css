@@ -2,78 +2,8 @@
    REPORT INCIDENT PAGE - MODERN REDESIGN
    ============================================ */
 
-/* Page Header Strip */
-.page-header-strip {
-    background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
-    padding: 140px 40px 60px;
-    color: white;
-}
-
-.page-header-strip.orange {
-    background: linear-gradient(135deg, var(--color-orange) 0%, #EA580C 100%);
-}
-
-.header-strip-content {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-
-.breadcrumb a {
-    color: white;
-    text-decoration: none;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-}
-
-.breadcrumb a:hover {
-    opacity: 1;
-}
-
-.breadcrumb i {
-    font-size: 16px;
-    opacity: 0.6;
-}
-
-.page-header-strip h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
-    letter-spacing: -1px;
-}
-
-.page-header-strip p {
-    font-size: 18px;
-    opacity: 0.9;
-    max-width: 600px;
-    line-height: 1.6;
-}
-
-.header-trust-badges {
-    display: flex;
-    gap: 32px;
-    margin-top: 28px;
-}
-
-.trust-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    opacity: 0.95;
-}
-
-.trust-item i {
-    font-size: 18px;
-}
+/* Page Header Strip - Report Incident uses shared styles from contact-page.css */
+/* Additional overrides if needed */
 
 /* Emergency Banner */
 .emergency-banner {
@@ -927,19 +857,6 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .page-header-strip {
-        padding: 120px 40px 50px;
-    }
-
-    .page-header-strip h1 {
-        font-size: 40px;
-    }
-
-    .header-trust-badges {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
     .timeline-steps {
         flex-direction: column;
         gap: 40px;
@@ -980,19 +897,6 @@
 }
 
 @media (max-width: 768px) {
-    .page-header-strip {
-        padding: 110px 20px 40px;
-    }
-
-    .page-header-strip h1 {
-        font-size: 32px;
-    }
-
-    .header-trust-badges {
-        flex-direction: column;
-        gap: 12px;
-    }
-
     .emergency-content {
         flex-direction: column;
         text-align: center;
