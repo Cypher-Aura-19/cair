@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav-contact.css">
-    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="contact-page.css">
     <link rel="stylesheet" href="footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -48,201 +48,374 @@
     </header>
 
     <main>
-        <!-- Enhanced Contact Hero -->
-        <section class="contact-hero-enhanced">
+        <!-- Hero Section -->
+        <section class="contact-hero-new">
             <div class="hero-content-left">
-                <div class="hero-badge-pill">
+                <div class="hero-badge">
                     <i class="ri-customer-service-2-line"></i>
                     <span>We're Here to Help</span>
                 </div>
-                <h1>Get in Touch</h1>
-                <p>Whether you need legal assistance, want to volunteer, or have a general inquiry, our team is ready to support you.</p>
-                <div class="hero-trust-badges">
-                    <div class="trust-item">
-                        <i class="ri-shield-check-line"></i>
-                        <span>Confidential</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="ri-time-line"></i>
-                        <span>24-48hr Response</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="ri-translate-2"></i>
-                        <span>Multilingual Support</span>
-                    </div>
+                <h1>Let's Start a <span class="text-gradient">Conversation</span></h1>
+                <p>Have questions about civil rights, need legal assistance, or want to get involved? Our team is ready to listen and support you.</p>
+                
+                <div class="hero-quick-links">
+                    <a href="#contact-form" class="quick-link-card">
+                        <i class="ri-mail-send-line"></i>
+                        <span>Send Message</span>
+                    </a>
+                    <a href="tel:+12485592247" class="quick-link-card">
+                        <i class="ri-phone-line"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="#location" class="quick-link-card">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Visit Office</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-image-right">
                 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80" alt="Team collaboration">
                 <div class="hero-floating-card">
-                    <div class="floating-icon"><i class="ri-chat-smile-3-line"></i></div>
+                    <div class="floating-icon"><i class="ri-time-line"></i></div>
                     <div class="floating-text">
-                        <span class="floating-number">10,000+</span>
-                        <span class="floating-label">Community Members Helped</span>
+                        <span class="floating-label">Response Time</span>
+                        <span class="floating-value">Within 24 Hours</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Quick Action Cards -->
-        <section class="quick-actions-section">
-            <div class="quick-actions-grid">
-                <a href="file-complaint.html" class="quick-action-card urgent">
-                    <div class="action-icon"><i class="ri-alarm-warning-line"></i></div>
-                    <div class="action-content">
-                        <h3>Report an Incident</h3>
-                        <p>Experienced discrimination or a hate crime? File a confidential report.</p>
-                    </div>
-                    <i class="ri-arrow-right-line action-arrow"></i>
-                </a>
-                <a href="request-speaker.html" class="quick-action-card">
-                    <div class="action-icon blue"><i class="ri-mic-line"></i></div>
-                    <div class="action-content">
-                        <h3>Request a Speaker</h3>
-                        <p>Invite our experts to speak at your event or organization.</p>
-                    </div>
-                    <i class="ri-arrow-right-line action-arrow"></i>
-                </a>
-                <a href="#volunteer" class="quick-action-card">
-                    <div class="action-icon green"><i class="ri-hand-heart-line"></i></div>
-                    <div class="action-content">
-                        <h3>Volunteer With Us</h3>
-                        <p>Join our mission and make a difference in your community.</p>
-                    </div>
-                    <i class="ri-arrow-right-line action-arrow"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- Contact Content Split -->
-        <section class="contact-form-section">
-            <div class="section-intro">
-                <h2>Send Us a Message</h2>
-                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-            </div>
-        </section>
-
-        <div class="contact-wrapper">
-
-            <!-- Left: Form -->
-            <div class="contact-form-container">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-input" placeholder="e.g. Sarah">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-input" placeholder="e.g. Connor">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label">Email Address</label>
-                            <input type="email" class="form-input" placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Phone (Optional)</label>
-                            <input type="tel" class="form-input" placeholder="+1 (555) 000-0000">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Subject</label>
-                        <select class="form-input">
-                            <option>General Inquiry</option>
-                            <option>Report an Incident</option>
-                            <option>Press/Media</option>
-                            <option>Volunteering</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-textarea" placeholder="How can we help you?"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary-lg" style="width: 100%;">Send Message</button>
-                </form>
+        <!-- Contact Methods Section -->
+        <section class="contact-methods">
+            <div class="methods-header">
+                <div class="label-pill">
+                    <span class="dot blue-dot"></span>
+                    Multiple Ways to Reach Us
+                </div>
+                <h2>Choose How You'd Like to Connect</h2>
             </div>
 
-            <!-- Right: Info -->
-            <div class="contact-info-sidebar">
-                <div class="info-card">
-                    <h3>Contact Info</h3>
-
-                    <div class="info-item">
-                        <span class="info-icon"><i class="ri-map-pin-line"></i></span>
-                        <div class="info-content">
-                            <h5>Visit Us</h5>
-                            <p>30201 Orchard Lake Rd,<br>Farmington Hills, MI 48334</p>
-                        </div>
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon blue-bg">
+                        <i class="ri-phone-line"></i>
                     </div>
-
-                    <div class="info-item">
-                        <span class="info-icon"><i class="ri-phone-line"></i></span>
-                        <div class="info-content">
-                            <h5>Call Us</h5>
-                            <p>(248) 559-2247</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span class="info-icon"><i class="ri-mail-line"></i></span>
-                        <div class="info-content">
-                            <h5>Email Us</h5>
-                            <p>info@cairmichigan.org</p>
-                        </div>
+                    <h3>Phone Support</h3>
+                    <p>Speak directly with our team for immediate assistance</p>
+                    <a href="tel:+12485592247" class="method-link">
+                        <span>(248) 559-2247</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <div class="method-hours">
+                        <i class="ri-time-line"></i>
+                        Mon-Fri: 9AM - 5PM EST
                     </div>
                 </div>
 
-                <div class="map-card">
-                    <!-- Placeholder map background via CSS -->
+                <div class="method-card">
+                    <div class="method-icon orange-bg">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us a detailed message and we'll respond promptly</p>
+                    <a href="mailto:info@cairmichigan.org" class="method-link">
+                        <span>info@cairmichigan.org</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <div class="method-hours">
+                        <i class="ri-reply-line"></i>
+                        Response within 24 hours
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon green-bg">
+                        <i class="ri-map-pin-2-line"></i>
+                    </div>
+                    <h3>Visit Our Office</h3>
+                    <p>Come meet us in person at our Michigan headquarters</p>
+                    <a href="https://maps.google.com" target="_blank" class="method-link">
+                        <span>Get Directions</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <div class="method-hours">
+                        <i class="ri-building-line"></i>
+                        Farmington Hills, MI
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon purple-bg">
+                        <i class="ri-alert-line"></i>
+                    </div>
+                    <h3>Emergency Hotline</h3>
+                    <p>For urgent civil rights matters requiring immediate attention</p>
+                    <a href="tel:+12485592247" class="method-link urgent">
+                        <span>Report Incident</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <div class="method-hours">
+                        <i class="ri-24-hours-line"></i>
+                        24/7 Available
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- Main Contact Section -->
+        <section id="contact-form" class="contact-main">
+            <div class="contact-main-wrapper">
+                <!-- Form Side -->
+                <div class="contact-form-side">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <form class="modern-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-input" placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-input" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-input" placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" placeholder="(555) 123-4567">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">What can we help you with?</label>
+                            <div class="subject-chips">
+                                <label class="subject-chip">
+                                    <input type="radio" name="subject" value="general">
+                                    <span><i class="ri-question-line"></i> General Inquiry</span>
+                                </label>
+                                <label class="subject-chip">
+                                    <input type="radio" name="subject" value="legal">
+                                    <span><i class="ri-scales-3-line"></i> Legal Help</span>
+                                </label>
+                                <label class="subject-chip">
+                                    <input type="radio" name="subject" value="volunteer">
+                                    <span><i class="ri-hand-heart-line"></i> Volunteer</span>
+                                </label>
+                                <label class="subject-chip">
+                                    <input type="radio" name="subject" value="media">
+                                    <span><i class="ri-vidicon-line"></i> Press/Media</span>
+                                </label>
+                                <label class="subject-chip">
+                                    <input type="radio" name="subject" value="donate">
+                                    <span><i class="ri-heart-line"></i> Donation</span>
+                                </label>
+                                <label class="subject-chip">
+                                    <input type="radio" name="subject" value="other">
+                                    <span><i class="ri-more-line"></i> Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Your Message</label>
+                            <textarea class="form-textarea" placeholder="Tell us how we can help you..." rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-lg btn-full">
+                            <span>Send Message</span>
+                            <i class="ri-send-plane-line"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Side -->
+                <div class="contact-info-side">
+                    <div class="info-card-modern">
+                        <div class="info-card-header">
+                            <h3>Contact Information</h3>
+                            <p>Reach out to us through any of these channels</p>
+                        </div>
+
+                        <div class="info-items">
+                            <div class="info-item-modern">
+                                <div class="info-icon-modern">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span class="info-label">Office Address</span>
+                                    <span class="info-value">30201 Orchard Lake Rd</span>
+                                    <span class="info-sub">Farmington Hills, MI 48334</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item-modern">
+                                <div class="info-icon-modern">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span class="info-label">Phone Number</span>
+                                    <span class="info-value">(248) 559-2247</span>
+                                    <span class="info-sub">Mon-Fri, 9AM-5PM EST</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item-modern">
+                                <div class="info-icon-modern">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span class="info-label">Email Address</span>
+                                    <span class="info-value">info@cairmichigan.org</span>
+                                    <span class="info-sub">We reply within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <span class="social-label">Follow Us</span>
+                            <div class="social-icons-row">
+                                <a href="#" class="social-icon-modern"><i class="ri-twitter-x-line"></i></a>
+                                <a href="#" class="social-icon-modern"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="social-icon-modern"><i class="ri-instagram-line"></i></a>
+                                <a href="#" class="social-icon-modern"><i class="ri-linkedin-fill"></i></a>
+                                <a href="#" class="social-icon-modern"><i class="ri-youtube-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours Card -->
+                    <div class="hours-card">
+                        <h4><i class="ri-time-line"></i> Office Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-row">
+                                <span>Monday - Friday</span>
+                                <span class="hours-time">9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="hours-row">
+                                <span>Saturday</span>
+                                <span class="hours-time closed">Closed</span>
+                            </div>
+                            <div class="hours-row">
+                                <span>Sunday</span>
+                                <span class="hours-time closed">Closed</span>
+                            </div>
+                        </div>
+                        <div class="hours-note">
+                            <i class="ri-information-line"></i>
+                            Emergency hotline available 24/7
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="location" class="map-section">
+            <div class="map-container">
+                <div class="map-overlay-info">
+                    <div class="map-info-card">
+                        <h3>CAIR Michigan Headquarters</h3>
+                        <p>30201 Orchard Lake Rd, Farmington Hills, MI 48334</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-primary-sm">
+                            <i class="ri-direction-line"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.8876543210!2d-83.3771234!3d42.4987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDI5JzU1LjYiTiA4M8KwMjInMzcuNiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
 
         <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="faq-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Quick answers to common questions about our services and advocacy.</p>
-            </div>
+        <section class="faq-section-new">
+            <div class="faq-container">
+                <div class="faq-header-new">
+                    <div class="label-pill">
+                        <span class="dot pink-dot"></span>
+                        FAQ
+                    </div>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find quick answers to common questions about our services</p>
+                </div>
 
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>How do I report a civil rights violation?</h4>
-                    <p>You can use the form above by selecting "Report an Incident" or call our hotline directly. All
-                        reports are confidential.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Do you offer free legal representation?</h4>
-                    <p>Yes, for cases that fall within our scope (civil rights, discrimination), we provide pro-bono
-                        legal services.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How can I have someone speak at my event?</h4>
-                    <p>Select "General Inquiry" in the contact form and provide details about your event, date, and
-                        topic.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Is my donation tax-deductible?</h4>
-                    <p>Yes, CAIR Michigan is a registered 501(c)(3) non-profit organization. All donations are
-                        tax-deductible.</p>
+                <div class="faq-grid-new">
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="ri-shield-check-line"></i></div>
+                        <h4>How do I report a civil rights violation?</h4>
+                        <p>You can report through our online form, call our hotline, or visit our office. All reports are kept strictly confidential.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="ri-scales-3-line"></i></div>
+                        <h4>Do you offer free legal services?</h4>
+                        <p>Yes, we provide pro-bono legal assistance for civil rights cases including discrimination, harassment, and hate crimes.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="ri-mic-line"></i></div>
+                        <h4>Can I request a speaker for my event?</h4>
+                        <p>Absolutely! Visit our Request a Speaker page to submit your event details and topic preferences.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="ri-hand-heart-line"></i></div>
+                        <h4>How can I volunteer with CAIR?</h4>
+                        <p>We welcome volunteers! Contact us through the form above or email us directly to learn about current opportunities.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="ri-money-dollar-circle-line"></i></div>
+                        <h4>Are donations tax-deductible?</h4>
+                        <p>Yes, CAIR Michigan is a registered 501(c)(3) non-profit. All donations are fully tax-deductible.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="ri-time-line"></i></div>
+                        <h4>What are your response times?</h4>
+                        <p>We aim to respond to all inquiries within 24 hours. Urgent matters are prioritized immediately.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- CTA Section -->
+        <section class="contact-cta">
+            <div class="cta-content">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Join thousands of community members who stand with CAIR Michigan in defending civil rights and promoting justice.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary-lg">
+                        <i class="ri-heart-line"></i> Donate Now
+                    </a>
+                    <a href="file-complaint.html" class="btn btn-outline-light">
+                        <i class="ri-alert-line"></i> Report Incident
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="footer-brand">
                 <h3><i class="ri-scales-3-line" style="color:var(--color-blue)"></i> CAIR MI</h3>
-                <p>Defending civil rights, enhancing understanding of Islam, promoting justice, and empowering American
-                    Muslims.</p>
+                <p>Defending civil rights, enhancing understanding of Islam, promoting justice, and empowering American Muslims.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="ri-twitter-x-line"></i></a>
                     <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
@@ -266,7 +439,7 @@
                     <li><a href="#">Know Your Rights</a></li>
                     <li><a href="#">Community Alerts</a></li>
                     <li><a href="#">Legal Services</a></li>
-                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="request-speaker.html">Request a Speaker</a></li>
                 </ul>
             </div>
 

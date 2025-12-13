@@ -94,39 +94,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ============================================
-    // CONTACT PAGE ANIMATIONS
+    // CONTACT PAGE ANIMATIONS (NEW DESIGN)
     // ============================================
 
-    // Enhanced Contact Hero
-    const contactHeroEnhanced = document.querySelector('.contact-hero-enhanced');
-    if (contactHeroEnhanced) {
+    // New Contact Hero
+    const contactHeroNew = document.querySelector('.contact-hero-new');
+    if (contactHeroNew) {
         const heroTl = gsap.timeline();
         
-        heroTl.from('.hero-badge-pill', {
+        heroTl.from('.hero-badge', {
             opacity: 0,
             y: 30,
             duration: 0.5,
             ease: 'power3.out'
         })
-        .from('.contact-hero-enhanced h1', {
+        .from('.contact-hero-new h1', {
             opacity: 0,
-            y: 60,
-            duration: 0.8,
+            y: 50,
+            duration: 0.7,
             ease: 'power3.out'
         }, '-=0.3')
         .from('.hero-content-left > p', {
             opacity: 0,
-            y: 40,
-            duration: 0.6,
+            y: 30,
+            duration: 0.5,
             ease: 'power3.out'
         }, '-=0.4')
-        .from('.trust-item', {
+        .from('.quick-link-card', {
             opacity: 0,
             y: 20,
             stagger: 0.1,
             duration: 0.4,
             ease: 'power2.out'
-        }, '-=0.3')
+        }, '-=0.2')
         .from('.hero-image-right > img', {
             opacity: 0,
             scale: 0.95,
@@ -136,35 +136,87 @@ document.addEventListener('DOMContentLoaded', () => {
         .from('.hero-floating-card', {
             opacity: 0,
             x: -30,
-            y: 20,
-            duration: 0.6,
+            duration: 0.5,
             ease: 'back.out(1.5)'
         }, '-=0.3');
-
-        // Floating card subtle animation
-        gsap.to('.hero-floating-card', {
-            y: -8,
-            duration: 2,
-            repeat: -1,
-            yoyo: true,
-            ease: 'sine.inOut',
-            delay: 1.5
-        });
     }
 
-    // Quick Actions
-    const quickActions = document.querySelector('.quick-actions-section');
-    if (quickActions) {
-        gsap.fromTo('.quick-action-card',
+    // Contact Methods Section
+    const contactMethods = document.querySelector('.contact-methods');
+    if (contactMethods) {
+        gsap.fromTo('.methods-header', 
             { opacity: 0, y: 40 },
             {
                 scrollTrigger: {
-                    trigger: quickActions,
+                    trigger: contactMethods,
                     start: 'top 85%',
                     toggleActions: 'play none none none'
                 },
                 opacity: 1,
                 y: 0,
+                duration: 0.6,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.method-card', 
+            { opacity: 0, y: 50 },
+            {
+                scrollTrigger: {
+                    trigger: '.methods-grid',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+                duration: 0.5,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Method card hover
+    document.querySelectorAll('.method-card').forEach(card => {
+        const icon = card.querySelector('.method-icon');
+        card.addEventListener('mouseenter', () => {
+            gsap.to(card, { y: -10, duration: 0.3, ease: 'power2.out' });
+            gsap.to(icon, { scale: 1.1, rotation: 5, duration: 0.3, ease: 'back.out(2)' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card, { y: 0, duration: 0.3, ease: 'power2.out' });
+            gsap.to(icon, { scale: 1, rotation: 0, duration: 0.3, ease: 'power2.out' });
+        });
+    });
+
+    // Contact Main Section
+    const contactMain = document.querySelector('.contact-main');
+    if (contactMain) {
+        gsap.fromTo('.contact-form-side', 
+            { opacity: 0, x: -50 },
+            {
+                scrollTrigger: {
+                    trigger: contactMain,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                x: 0,
+                duration: 0.8,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.contact-info-side > *', 
+            { opacity: 0, x: 50 },
+            {
+                scrollTrigger: {
+                    trigger: '.contact-info-side',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                x: 0,
                 stagger: 0.15,
                 duration: 0.6,
                 ease: 'power3.out'
@@ -172,29 +224,49 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    // Quick action card hover
-    document.querySelectorAll('.quick-action-card').forEach(card => {
-        const icon = card.querySelector('.action-icon');
-        const arrow = card.querySelector('.action-arrow');
-        
-        card.addEventListener('mouseenter', () => {
-            gsap.to(icon, { scale: 1.1, rotation: 5, duration: 0.3, ease: 'back.out(2)' });
-            gsap.to(arrow, { x: 5, duration: 0.25, ease: 'power2.out' });
-        });
-        card.addEventListener('mouseleave', () => {
-            gsap.to(icon, { scale: 1, rotation: 0, duration: 0.3, ease: 'power2.out' });
-            gsap.to(arrow, { x: 0, duration: 0.25, ease: 'power2.out' });
-        });
-    });
-
-    // Section intro
-    const sectionIntro = document.querySelector('.section-intro');
-    if (sectionIntro) {
-        gsap.fromTo('.section-intro',
-            { opacity: 0, y: 30 },
+    // Map Section
+    const mapSection = document.querySelector('.map-section');
+    if (mapSection) {
+        gsap.fromTo('.map-container', 
+            { opacity: 0, y: 40 },
             {
                 scrollTrigger: {
-                    trigger: sectionIntro,
+                    trigger: mapSection,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.7,
+                ease: 'power3.out'
+            }
+        );
+
+        gsap.fromTo('.map-info-card', 
+            { opacity: 0, x: -30 },
+            {
+                scrollTrigger: {
+                    trigger: mapSection,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                x: 0,
+                duration: 0.6,
+                delay: 0.3,
+                ease: 'back.out(1.5)'
+            }
+        );
+    }
+
+    // FAQ Section New
+    const faqSectionNew = document.querySelector('.faq-section-new');
+    if (faqSectionNew) {
+        gsap.fromTo('.faq-header-new', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: faqSectionNew,
                     start: 'top 85%',
                     toggleActions: 'play none none none'
                 },
@@ -204,9 +276,87 @@ document.addEventListener('DOMContentLoaded', () => {
                 ease: 'power3.out'
             }
         );
+
+        gsap.fromTo('.faq-card', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: '.faq-grid-new',
+                    start: 'top 90%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                stagger: 0.08,
+                duration: 0.5,
+                ease: 'power3.out'
+            }
+        );
     }
 
-    // Contact Hero (legacy fallback)
+    // FAQ card hover
+    document.querySelectorAll('.faq-card').forEach(card => {
+        const icon = card.querySelector('.faq-icon');
+        card.addEventListener('mouseenter', () => {
+            gsap.to(card, { y: -8, duration: 0.25, ease: 'power2.out' });
+            if (icon) gsap.to(icon, { scale: 1.1, duration: 0.25, ease: 'back.out(2)' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card, { y: 0, duration: 0.25, ease: 'power2.out' });
+            if (icon) gsap.to(icon, { scale: 1, duration: 0.25, ease: 'power2.out' });
+        });
+    });
+
+    // CTA Section
+    const contactCta = document.querySelector('.contact-cta');
+    if (contactCta) {
+        gsap.fromTo('.cta-content', 
+            { opacity: 0, y: 40 },
+            {
+                scrollTrigger: {
+                    trigger: contactCta,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.7,
+                ease: 'power3.out'
+            }
+        );
+    }
+
+    // Quick link card hover
+    document.querySelectorAll('.quick-link-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            gsap.to(card, { y: -5, scale: 1.02, duration: 0.25, ease: 'power2.out' });
+        });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(card, { y: 0, scale: 1, duration: 0.25, ease: 'power2.out' });
+        });
+    });
+
+    // Social icon modern hover
+    document.querySelectorAll('.social-icon-modern').forEach(icon => {
+        icon.addEventListener('mouseenter', () => {
+            gsap.to(icon, { y: -4, scale: 1.1, duration: 0.25, ease: 'back.out(2)' });
+        });
+        icon.addEventListener('mouseleave', () => {
+            gsap.to(icon, { y: 0, scale: 1, duration: 0.25, ease: 'power2.out' });
+        });
+    });
+
+    // Subject chip animation
+    document.querySelectorAll('.subject-chip').forEach(chip => {
+        chip.addEventListener('mouseenter', () => {
+            gsap.to(chip.querySelector('span'), { scale: 1.03, duration: 0.2, ease: 'power2.out' });
+        });
+        chip.addEventListener('mouseleave', () => {
+            gsap.to(chip.querySelector('span'), { scale: 1, duration: 0.2, ease: 'power2.out' });
+        });
+    });
+
+    // OLD Contact Hero (fallback for old design)
     const contactHero = document.querySelector('.contact-hero');
     if (contactHero) {
         const tl = gsap.timeline();
