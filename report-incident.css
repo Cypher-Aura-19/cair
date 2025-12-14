@@ -56,7 +56,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #DC2626;
+    background: var(--color-orange);
     color: white;
     padding: 14px 28px;
     border-radius: 50px;
@@ -67,7 +67,7 @@
 }
 
 .emergency-btn:hover {
-    background: #B91C1C;
+    background: #d97706;
     transform: scale(1.02);
 }
 
@@ -79,12 +79,12 @@
 }
 
 .timeline-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
 }
 
 .timeline-header h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 16px 0 12px;
 }
 
@@ -160,12 +160,12 @@
 }
 
 .cases-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
 }
 
 .cases-header h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 16px 0 12px;
 }
 
@@ -296,12 +296,12 @@
 }
 
 .form-section-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
 }
 
 .form-section-header h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 12px;
 }
 
@@ -708,12 +708,12 @@
 }
 
 .testimonials-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
 }
 
 .testimonials-header h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 12px;
 }
 

@@ -1,0 +1,695 @@
+/* ============================================
+   ADVOCACY PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   HERO SECTION - CLEAN CENTERED DESIGN
+   ============================================ */
+.advocacy-hero {
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1e3a8a 100%);
+    padding: 160px 5% 100px;
+}
+
+.advocacy-hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.advocacy-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.advocacy-tag i {
+    font-size: 18px;
+}
+
+.advocacy-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+}
+
+.advocacy-hero-inner > p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advocacy-hero-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advocacy-hero .btn-primary-lg {
+    background: var(--color-orange);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.advocacy-hero .btn-primary-lg:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+}
+
+.advocacy-hero .btn-outline-white {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.advocacy-hero .btn-outline-white:hover {
+    background: white;
+    color: var(--color-blue);
+    border-color: white;
+}
+
+/* ============================================
+   STATS BAR
+   ============================================ */
+.advocacy-stats {
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
+    padding: 48px 5%;
+}
+
+.advocacy-stats .stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.advocacy-stats .stat-item {
+    text-align: center;
+}
+
+.advocacy-stats .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.advocacy-stats .stat-label {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================
+   FOCUS AREAS SECTION
+   ============================================ */
+.focus-section {
+    padding: 100px 5%;
+    background: white;
+}
+
+.focus-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin: 16px 0 12px;
+    letter-spacing: -1px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.focus-card {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 36px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.focus-card:hover {
+    background: white;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-color: #e2e8f0;
+}
+
+.focus-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--color-blue), #1E3A8A);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.focus-icon i {
+    font-size: 28px;
+    color: white;
+}
+
+.focus-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 12px;
+}
+
+.focus-card > p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.focus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.focus-list li {
+    font-size: 0.9rem;
+    color: #64748b;
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.focus-list li:last-child {
+    border-bottom: none;
+}
+
+.focus-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--color-orange);
+    border-radius: 50%;
+}
+
+/* ============================================
+   APPROACH SECTION
+   ============================================ */
+.approach-section {
+    padding: 100px 5%;
+    background: #f8fafc;
+}
+
+.approach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.approach-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin: 16px 0 20px;
+    letter-spacing: -1px;
+}
+
+.approach-intro {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.approach-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.approach-step {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    background: white;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.approach-step:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.step-num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-blue);
+    opacity: 0.3;
+    min-width: 50px;
+}
+
+.step-content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+}
+
+.step-content p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.approach-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================================
+   CAMPAIGNS SECTION
+   ============================================ */
+.campaigns-section {
+    padding: 100px 5%;
+    background: white;
+}
+
+.campaigns-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campaigns-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.campaign-card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.campaign-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+.campaign-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--color-blue), #1E3A8A);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.campaign-icon i {
+    font-size: 26px;
+    color: white;
+}
+
+.campaign-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.campaign-card > p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.campaign-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: gap 0.2s ease;
+}
+
+.campaign-link:hover {
+    gap: 12px;
+}
+
+/* ============================================
+   TAKE ACTION SECTION
+   ============================================ */
+.action-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
+}
+
+.action-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header.light {
+    color: white;
+}
+
+.section-header.light h2 {
+    color: white;
+}
+
+.section-header.light p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.label-pill.light {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.label-pill.light span {
+    color: white;
+}
+
+.white-dot {
+    background: white;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.action-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 36px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.action-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-8px);
+}
+
+.action-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.action-icon i {
+    font-size: 32px;
+    color: white;
+}
+
+.action-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.btn-white {
+    background: white;
+    color: var(--color-blue);
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   VICTORIES SECTION
+   ============================================ */
+.victories-section {
+    padding: 100px 5%;
+    background: #f8fafc;
+}
+
+.victories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.victories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.victory-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.victory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.victory-year {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-orange);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(234, 88, 12, 0.1));
+    padding: 6px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.victory-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.victory-card p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.advocacy-cta {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
+    text-align: center;
+    margin: 0 40px 80px;
+    border-radius: 32px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advocacy-cta .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.advocacy-cta .cta-content p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 36px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advocacy-cta .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advocacy-cta .btn-primary-lg {
+    background: var(--color-orange);
+    padding: 18px 36px;
+    border-radius: 14px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 1024px) {
+    .advocacy-hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .advocacy-hero h1 {
+        font-size: 2.75rem;
+    }
+    
+    .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .approach-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    
+    .approach-image {
+        order: -1;
+    }
+    
+    .approach-image img {
+        height: 400px;
+    }
+    
+    .campaigns-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .action-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .advocacy-hero {
+        padding: 140px 5% 70px;
+    }
+    
+    .advocacy-hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .advocacy-hero-inner > p {
+        font-size: 1rem;
+    }
+    
+    .advocacy-stats .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .campaigns-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .victories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .advocacy-cta {
+        margin: 0 20px 60px;
+        padding: 60px 24px;
+    }
+}

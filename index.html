@@ -3,10 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=contact.html">
-    <title>CAIR Michigan</title>
+    <title>CAIR Michigan - Defending Civil Rights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .home-hero {
+            background: linear-gradient(135deg, var(--color-blue) 0%, #1e3a8a 100%);
+            padding: 160px 5% 100px;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .home-hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .home-hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1.5px;
+        }
+        .home-hero-content h1 span {
+            color: var(--color-orange);
+        }
+        .home-hero-content p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.7;
+            margin-bottom: 36px;
+        }
+        .home-hero-btns {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .home-hero-btns .btn-primary-lg {
+            background: var(--color-orange);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+        }
+        .home-hero-btns .btn-primary-lg:hover {
+            background: #ea580c;
+        }
+        .home-hero-btns .btn-outline {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.4);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+        }
+        .home-hero-btns .btn-outline:hover {
+            background: white;
+            color: var(--color-blue);
+            border-color: white;
+        }
+        .home-hero-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+        .home-stats {
+            padding: 80px 5%;
+            background: white;
+        }
+        .home-stats-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+        .home-stat-item h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--color-blue);
+            margin-bottom: 8px;
+        }
+        .home-stat-item p {
+            color: #64748b;
+            font-size: 1rem;
+        }
+        .home-services {
+            padding: 100px 5%;
+            background: #f8fafc;
+        }
+        .home-services-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-text-dark);
+            margin-bottom: 16px;
+        }
+        .section-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .service-card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .service-card:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
+        }
+        .service-card i {
+            font-size: 40px;
+            color: var(--color-blue);
+            margin-bottom: 20px;
+            display: block;
+        }
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text-dark);
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .service-card a {
+            color: var(--color-blue);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .service-card a:hover {
+            color: var(--color-orange);
+        }
+        .home-cta {
+            padding: 100px 5%;
+            background: linear-gradient(135deg, var(--color-blue) 0%, #1e3a8a 100%);
+            text-align: center;
+        }
+        .home-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+        .home-cta p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.15rem;
+            margin-bottom: 36px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .home-cta .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 1024px) {
+            .home-hero-inner { grid-template-columns: 1fr; text-align: center; }
+            .home-hero-btns { justify-content: center; }
+            .home-hero-image { display: none; }
+            .home-stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .home-hero-content h1 { font-size: 2.5rem; }
+            .home-stats-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="contact.html">CAIR Michigan</a>...</p>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="ri-scales-3-line logo-icon-font"></i>
+                <span class="logo-text">CAIR <span class="logo-sub">Michigan</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-toggle">Programs <i class="ri-arrow-down-s-line"></i></span>
+                    <div class="nav-dropdown-menu">
+                        <a href="advocacy.html" class="dropdown-link"><i class="ri-megaphone-line"></i> Advocacy</a>
+                        <a href="safe-space.html" class="dropdown-link"><i class="ri-shield-star-line"></i> Safe Space</a>
+                        <a href="request-speaker.html" class="dropdown-link"><i class="ri-mic-line"></i> Request a Speaker</a>
+                    </div>
+                </div>
+                <a href="media.html" class="nav-link">In The Media</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="file-complaint.html" class="nav-link" style="color: var(--color-orange); font-weight: 700;">Report Incident</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-primary-sm">Donate</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="home-hero">
+            <div class="home-hero-inner">
+                <div class="home-hero-content">
+                    <h1>Defending <span>Civil Rights</span> for All</h1>
+                    <p>CAIR Michigan is a civil rights, advocacy, and community-empowerment organization protecting the rights of American Muslims, combating discrimination and Islamophobia, promoting justice, and educating the public about Islam and civil liberties.</p>
+                    <div class="home-hero-btns">
+                        <a href="file-complaint.html" class="btn-primary-lg">
+                            <i class="ri-alarm-warning-line"></i>
+                            Report an Incident
+                        </a>
+                        <a href="about.html" class="btn-outline">
+                            Learn About Us
+                        </a>
+                    </div>
+                </div>
+                <div class="home-hero-image">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=500&fit=crop" alt="Community support">
+                </div>
+            </div>
+        </section>
+
+        <section class="home-stats">
+            <div class="home-stats-grid">
+                <div class="home-stat-item">
+                    <h3>25+</h3>
+                    <p>Years of Service</p>
+                </div>
+                <div class="home-stat-item">
+                    <h3>10K+</h3>
+                    <p>Cases Handled</p>
+                </div>
+                <div class="home-stat-item">
+                    <h3>500+</h3>
+                    <p>Events Annually</p>
+                </div>
+                <div class="home-stat-item">
+                    <h3>100%</h3>
+                    <p>Free Legal Help</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-services">
+            <div class="home-services-inner">
+                <div class="section-header">
+                    <h2>How We Can Help</h2>
+                    <p>We serve the community through multiple programs and initiatives</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="ri-scales-3-line"></i>
+                        <h3>Legal Services</h3>
+                        <p>Free legal assistance for civil rights cases including discrimination, hate crimes, and constitutional violations.</p>
+                        <a href="file-complaint.html">Report an Incident <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <i class="ri-megaphone-line"></i>
+                        <h3>Advocacy</h3>
+                        <p>We advocate for policies that protect civil liberties and challenge discriminatory legislation at all levels.</p>
+                        <a href="advocacy.html">Learn More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <i class="ri-presentation-line"></i>
+                        <h3>Education</h3>
+                        <p>Know Your Rights workshops, cultural awareness training, and educational resources for schools and organizations.</p>
+                        <a href="request-speaker.html">Request a Speaker <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-cta">
+            <h2>Need Help or Want to Get Involved?</h2>
+            <p>Whether you need legal assistance, want to volunteer, or wish to support our mission, we welcome you.</p>
+            <div class="cta-buttons">
+                <a href="donate.html" class="btn-primary-lg" style="background: var(--color-orange); color: white; padding: 18px 36px; border-radius: 12px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="ri-heart-line"></i>
+                    Support Our Work
+                </a>
+                <a href="contact.html" class="btn-outline" style="background: transparent; border: 2px solid rgba(255,255,255,0.4); color: white; padding: 16px 32px; border-radius: 12px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="ri-mail-line"></i>
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="ri-scales-3-line" style="color:var(--color-blue)"></i> CAIR MI</h3>
+                <p>Defending civil rights, enhancing understanding of Islam, promoting justice, and empowering American Muslims.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="file-complaint.html">Report Incident</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="resources.html">Resource Library</a></li>
+                    <li><a href="request-speaker.html">Request a Speaker</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4 class="footer-heading">Stay Updated</h4>
+                <p>Get alerts and community news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="ri-send-plane-fill"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>© 2025 CAIR Michigan. All rights reserved.</p></div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>

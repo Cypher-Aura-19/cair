@@ -116,13 +116,13 @@ section.page-header-strip.orange {
 }
 
 .methods-header {
-    text-align: center;
+    text-align: left;
     max-width: 600px;
-    margin: 0 auto 60px;
+    margin: 0 0 60px;
 }
 
 .methods-header h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 16px;
     margin-bottom: 0;
 }
@@ -234,7 +234,7 @@ section.page-header-strip.orange {
 }
 
 .form-header h2 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -539,7 +539,7 @@ section.page-header-strip.orange {
 }
 
 .faq-header-new {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
 }
 
@@ -604,7 +604,7 @@ section.page-header-strip.orange {
     background: linear-gradient(135deg, var(--color-blue) 0%, #1E3A8A 100%);
     padding: 80px 40px;
     text-align: center;
-    margin: 0 40px 100px;
+    margin: 80px 40px 100px;
     border-radius: 32px;
     max-width: 1320px;
     margin-left: auto;
@@ -629,6 +629,16 @@ section.page-header-strip.orange {
     display: flex;
     gap: 16px;
     justify-content: center;
+}
+
+.cta-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-buttons .btn i {
+    font-size: 18px;
 }
 
 .btn-outline-light {
