@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System - CAIR Michigan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design-system.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="ds-container">
+        <!-- Header -->
+        <header class="ds-header">
+            <div class="ds-logo">
+                <i class="ri-scales-3-line"></i>
+                <span>CAIR Michigan</span>
+            </div>
+            <h1>Design System</h1>
+            <p>UI Components, Colors, Typography & Patterns</p>
+        </header>
+
+        <!-- Colors Section -->
+        <section class="ds-section">
+            <h2>Colors</h2>
+            <div class="ds-subsection">
+                <h3>Primary Colors</h3>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #2563EB;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Blue (Primary)</span>
+                            <span class="color-hex">#2563EB</span>
+                            <span class="color-var">--color-blue</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #F97316;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Orange (Accent)</span>
+                            <span class="color-hex">#F97316</span>
+                            <span class="color-var">--color-orange</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #1E293B;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Dark</span>
+                            <span class="color-hex">#1E293B</span>
+                            <span class="color-var">--color-dark</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #FFFFFF; border: 1px solid #e2e8f0;"></div>
+                        <div class="color-info">
+                            <span class="color-name">White</span>
+                            <span class="color-hex">#FFFFFF</span>
+                            <span class="color-var">--color-white</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Hover States</h3>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #1e3a8a;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Blue Hover</span>
+                            <span class="color-hex">#1E3A8A</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #ff8c00;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Orange Hover</span>
+                            <span class="color-hex">#FF8C00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Neutral Colors</h3>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #f8fafc;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Background Light</span>
+                            <span class="color-hex">#F8FAFC</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #f1f5f9;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Gray 100</span>
+                            <span class="color-hex">#F1F5F9</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #e2e8f0;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Border</span>
+                            <span class="color-hex">#E2E8F0</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #64748b;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Text Muted</span>
+                            <span class="color-hex">#64748B</span>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #94a3b8;"></div>
+                        <div class="color-info">
+                            <span class="color-name">Text Light</span>
+                            <span class="color-hex">#94A3B8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="ds-section">
+            <h2>Typography</h2>
+            <div class="ds-subsection">
+                <h3>Font Family</h3>
+                <div class="font-display">
+                    <span class="font-name">Urbanist</span>
+                    <span class="font-sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                    <span class="font-sample">abcdefghijklmnopqrstuvwxyz</span>
+                    <span class="font-sample">0123456789</span>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Headings</h3>
+                <div class="type-scale">
+                    <div class="type-item">
+                        <span class="type-label">H1 - Hero</span>
+                        <h1 class="type-sample" style="font-size: 3.2rem; font-weight: 800; letter-spacing: -1px;">Know Your Rights</h1>
+                        <span class="type-specs">3.2rem / 800 / -1px</span>
+                    </div>
+                    <div class="type-item">
+                        <span class="type-label">H2 - Section</span>
+                        <h2 class="type-sample" style="font-size: 2.2rem; font-weight: 700;">Section Title</h2>
+                        <span class="type-specs">2.2rem / 700</span>
+                    </div>
+                    <div class="type-item">
+                        <span class="type-label">H3 - Card Title</span>
+                        <h3 class="type-sample" style="font-size: 1.1rem; font-weight: 700;">Card Title</h3>
+                        <span class="type-specs">1.1rem / 700</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Body Text</h3>
+                <div class="type-scale">
+                    <div class="type-item">
+                        <span class="type-label">Body Large</span>
+                        <p class="type-sample" style="font-size: 1.1rem; color: #64748b; line-height: 1.7;">Empowering American Muslims to understand and protect their constitutional rights.</p>
+                        <span class="type-specs">1.1rem / 400 / 1.7 line-height</span>
+                    </div>
+                    <div class="type-item">
+                        <span class="type-label">Body Regular</span>
+                        <p class="type-sample" style="font-size: 0.95rem; color: #64748b; line-height: 1.6;">Free legal guidance for our community members.</p>
+                        <span class="type-specs">0.95rem / 400 / 1.6 line-height</span>
+                    </div>
+                    <div class="type-item">
+                        <span class="type-label">Caption</span>
+                        <p class="type-sample" style="font-size: 0.85rem; color: #94a3b8;">PDF · 7.28 MB</p>
+                        <span class="type-specs">0.85rem / 500</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="ds-section">
+            <h2>Buttons</h2>
+            <div class="ds-subsection">
+                <h3>Primary Buttons</h3>
+                <div class="button-grid">
+                    <div class="button-item">
+                        <a href="#" class="btn btn-primary-lg"><span>Primary Large</span><i class="ri-arrow-right-line"></i></a>
+                        <span class="button-label">.btn-primary-lg</span>
+                    </div>
+                    <div class="button-item">
+                        <a href="#" class="btn btn-primary">Primary Button</a>
+                        <span class="button-label">.btn-primary</span>
+                    </div>
+                    <div class="button-item">
+                        <a href="#" class="btn btn-primary-sm">Donate</a>
+                        <span class="button-label">.btn-primary-sm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Outline Buttons</h3>
+                <div class="button-grid">
+                    <div class="button-item dark-bg">
+                        <a href="#" class="btn btn-outline-white">Outline White</a>
+                        <span class="button-label">.btn-outline-white</span>
+                    </div>
+                    <div class="button-item dark-bg">
+                        <a href="#" class="btn btn-outline-light"><i class="ri-phone-line"></i> Contact Us</a>
+                        <span class="button-label">.btn-outline-light</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Labels & Badges Section -->
+        <section class="ds-section">
+            <h2>Labels & Badges</h2>
+            <div class="ds-subsection">
+                <h3>Section Pills</h3>
+                <div class="component-grid">
+                    <div class="component-item">
+                        <div class="label-pill">
+                            <span class="dot blue-dot"></span>
+                            Blue Label
+                        </div>
+                        <span class="component-label">.label-pill + .blue-dot</span>
+                    </div>
+                    <div class="component-item">
+                        <div class="label-pill">
+                            <span class="dot orange-dot"></span>
+                            Orange Label
+                        </div>
+                        <span class="component-label">.label-pill + .orange-dot</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Category Tags</h3>
+                <div class="component-grid">
+                    <div class="component-item">
+                        <span class="tag blue">Report</span>
+                        <span class="component-label">Blue Tag</span>
+                    </div>
+                    <div class="component-item">
+                        <span class="tag orange">Advisory</span>
+                        <span class="component-label">Orange Tag</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="ds-section">
+            <h2>Cards</h2>
+            <div class="ds-subsection">
+                <h3>Resource Card</h3>
+                <div class="card-showcase">
+                    <a href="#" class="resource-card-demo">
+                        <div class="resource-icon">
+                            <i class="ri-file-chart-2-line"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>2023 Civil Rights Report</h3>
+                            <p>Annual civil rights documentation</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Report</span>
+                                <span class="resource-size">7.28 MB</span>
+                            </div>
+                        </div>
+                        <div class="resource-download">
+                            <i class="ri-download-2-line"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Feature Card</h3>
+                <div class="card-showcase">
+                    <div class="feature-card-demo">
+                        <div class="card-icon"><i class="ri-shield-user-line"></i></div>
+                        <h3>Know Your Rights</h3>
+                        <p>Learn your constitutional rights during FBI encounters and workplace discrimination.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Icons Section -->
+        <section class="ds-section">
+            <h2>Icons</h2>
+            <div class="ds-subsection">
+                <h3>Common Icons (Remix Icon)</h3>
+                <div class="icon-grid">
+                    <div class="icon-item">
+                        <i class="ri-scales-3-line"></i>
+                        <span>scales-3-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-shield-user-line"></i>
+                        <span>shield-user-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-file-chart-2-line"></i>
+                        <span>file-chart-2-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-download-2-line"></i>
+                        <span>download-2-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-phone-line"></i>
+                        <span>phone-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-mail-line"></i>
+                        <span>mail-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-map-pin-line"></i>
+                        <span>map-pin-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-calendar-line"></i>
+                        <span>calendar-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-arrow-right-line"></i>
+                        <span>arrow-right-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-megaphone-line"></i>
+                        <span>megaphone-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-heart-line"></i>
+                        <span>heart-line</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="ri-graduation-cap-line"></i>
+                        <span>graduation-cap</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing & Radius Section -->
+        <section class="ds-section">
+            <h2>Spacing & Border Radius</h2>
+            <div class="ds-subsection">
+                <h3>Border Radius</h3>
+                <div class="radius-grid">
+                    <div class="radius-item">
+                        <div class="radius-box" style="border-radius: 8px;"></div>
+                        <span>8px - Small</span>
+                    </div>
+                    <div class="radius-item">
+                        <div class="radius-box" style="border-radius: 12px;"></div>
+                        <span>12px - Medium</span>
+                    </div>
+                    <div class="radius-item">
+                        <div class="radius-box" style="border-radius: 16px;"></div>
+                        <span>16px - Large</span>
+                    </div>
+                    <div class="radius-item">
+                        <div class="radius-box" style="border-radius: 20px;"></div>
+                        <span>20px - XL</span>
+                    </div>
+                    <div class="radius-item">
+                        <div class="radius-box" style="border-radius: 50px;"></div>
+                        <span>50px - Pill</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ds-subsection">
+                <h3>Shadows</h3>
+                <div class="shadow-grid">
+                    <div class="shadow-item" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                        <span>Subtle</span>
+                        <code>0 2px 8px rgba(0,0,0,0.06)</code>
+                    </div>
+                    <div class="shadow-item" style="box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                        <span>Medium</span>
+                        <code>0 10px 30px rgba(0,0,0,0.08)</code>
+                    </div>
+                    <div class="shadow-item" style="box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <span>Large</span>
+                        <code>0 20px 40px rgba(0,0,0,0.1)</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="ds-footer">
+            <p>CAIR Michigan Design System · December 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
