@@ -65,7 +65,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #d97706;
+    background-color: #ff8c00;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(247, 151, 34, 0.3);
 }
@@ -131,7 +131,7 @@ body {
 }
 
 .btn-primary-lg:hover {
-    background-color: #d97706;
+    background-color: #ff8c00;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(247, 151, 34, 0.35);
 }

@@ -74,7 +74,7 @@
 }
 
 .safe-hero .btn-primary-lg:hover {
-    background: #d97706;
+    background: #ff8c00;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
 }
@@ -726,7 +726,7 @@
 }
 
 .safe-cta .btn-primary-lg:hover {
-    background: #d97706;
+    background: #ff8c00;
     transform: translateY(-2px);
 }
 

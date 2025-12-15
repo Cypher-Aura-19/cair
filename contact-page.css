@@ -11,7 +11,7 @@ section.page-header-strip {
 }
 
 section.page-header-strip.orange {
-    background: linear-gradient(135deg, var(--color-orange) 0%, #EA580C 100%);
+    background: linear-gradient(135deg, var(--color-orange) 0%, #ff8c00 100%);
 }
 
 .page-header-strip .header-strip-content {

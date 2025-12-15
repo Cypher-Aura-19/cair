@@ -127,7 +127,7 @@
 }
 
 .btn-primary-lg:hover {
-    background: #ea580c;
+    background: #ff8c00;
     transform: translateY(-2px);
 }
 
@@ -493,7 +493,7 @@
 /* Internship CTA Section */
 .wwa-intern-cta {
     padding: 100px 5%;
-    background: linear-gradient(135deg, var(--color-orange) 0%, #ea580c 100%);
+    background: linear-gradient(135deg, var(--color-orange) 0%, #ff8c00 100%);
 }
 
 .wwa-intern-inner {
