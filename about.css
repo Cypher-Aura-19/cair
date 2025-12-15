@@ -246,10 +246,7 @@
     margin: 0 auto;
 }
 
-.values-header {
-    text-align: left;
-    margin-bottom: 64px;
-}
+/* Values header uses global .section-header from style.css */
 
 .values-header h2 {
     font-size: 2.5rem;
@@ -277,6 +274,9 @@
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .value-card:hover {
@@ -329,10 +329,7 @@
     margin: 0 auto;
 }
 
-.services-header {
-    text-align: left;
-    margin-bottom: 64px;
-}
+/* Services header uses global .section-header from style.css */
 
 .services-header h2 {
     font-size: 2.5rem;
@@ -361,6 +358,9 @@
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .service-card:hover {
@@ -407,6 +407,7 @@
     color: #64748b;
     line-height: 1.7;
     margin-bottom: 24px;
+    flex: 1;
 }
 
 .service-link {
@@ -437,10 +438,7 @@
     margin: 0 auto;
 }
 
-.history-header {
-    text-align: left;
-    margin-bottom: 72px;
-}
+/* History header uses global .section-header from style.css */
 
 .history-header h2 {
     font-size: 2.5rem;
@@ -570,10 +568,7 @@
     margin: 0 auto;
 }
 
-.team-header {
-    text-align: left;
-    margin-bottom: 64px;
-}
+/* Team header uses global .section-header from style.css */
 
 .team-header h2 {
     font-size: 2.5rem;
@@ -600,6 +595,9 @@
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .team-card:hover {

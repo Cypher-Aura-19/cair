@@ -115,17 +115,7 @@ section.page-header-strip.orange {
     background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
 }
 
-.methods-header {
-    text-align: left;
-    max-width: 600px;
-    margin: 0 0 60px;
-}
-
-.methods-header h2 {
-    font-size: 2.5rem;
-    margin-top: 16px;
-    margin-bottom: 0;
-}
+/* Methods header uses global .section-header from style.css */
 
 .methods-grid {
     display: grid;
@@ -538,20 +528,7 @@ section.page-header-strip.orange {
     margin: 0 auto;
 }
 
-.faq-header-new {
-    text-align: left;
-    margin-bottom: 60px;
-}
-
-.faq-header-new h2 {
-    font-size: 40px;
-    margin: 16px 0 12px;
-}
-
-.faq-header-new p {
-    color: var(--color-text-grey);
-    font-size: 18px;
-}
+/* FAQ header uses global .section-header from style.css */
 
 .faq-grid-new {
     display: grid;

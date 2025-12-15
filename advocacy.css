@@ -146,23 +146,7 @@
     margin: 0 auto;
 }
 
-.section-header {
-    text-align: left;
-    margin-bottom: 60px;
-}
-
-.section-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-dark);
-    margin: 16px 0 12px;
-    letter-spacing: -1px;
-}
-
-.section-header p {
-    font-size: 1.1rem;
-    color: #64748b;
-}
+/* Section headers use global styles from style.css */
 
 .focus-grid {
     display: grid;
@@ -176,6 +160,9 @@
     padding: 36px;
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .focus-card:hover {
@@ -356,6 +343,9 @@
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .campaign-card:hover {
@@ -392,6 +382,7 @@
     color: #64748b;
     line-height: 1.6;
     margin-bottom: 20px;
+    flex: 1;
 }
 
 .campaign-link {
@@ -422,17 +413,7 @@
     margin: 0 auto;
 }
 
-.section-header.light {
-    color: white;
-}
-
-.section-header.light h2 {
-    color: white;
-}
-
-.section-header.light p {
-    color: rgba(255, 255, 255, 0.8);
-}
+/* Light section header variant defined in style.css */
 
 .label-pill.light {
     background: rgba(255, 255, 255, 0.15);
@@ -461,6 +442,9 @@
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.15);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .action-card:hover {
@@ -496,6 +480,7 @@
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     margin-bottom: 24px;
+    flex: 1;
 }
 
 .btn-white {
@@ -508,6 +493,7 @@
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
+    margin-top: auto;
 }
 
 .btn-white:hover {

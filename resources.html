@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Resources - CAIR Michigan</title>
+    <title>Resources - CAIR Michigan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,17 +23,28 @@
             <nav class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
+                <a href="who-we-are.html" class="nav-link">Who We Are</a>
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-toggle">Programs <i class="ri-arrow-down-s-line"></i></span>
                     <div class="nav-dropdown-menu">
                         <a href="advocacy.html" class="dropdown-link"><i class="ri-megaphone-line"></i> Advocacy</a>
                         <a href="safe-space.html" class="dropdown-link"><i class="ri-shield-star-line"></i> Safe Space</a>
                         <a href="request-speaker.html" class="dropdown-link"><i class="ri-mic-line"></i> Request a Speaker</a>
+                        <a href="media-request.html" class="dropdown-link"><i class="ri-newspaper-line"></i> Media Request</a>
+                        <a href="volunteer.html" class="dropdown-link"><i class="ri-heart-line"></i> Volunteer</a>
+                        <a href="internships.html" class="dropdown-link"><i class="ri-graduation-cap-line"></i> Internships</a>
                     </div>
                 </div>
                 <a href="media.html" class="nav-link">In The Media</a>
                 <a href="events.html" class="nav-link">Events</a>
-                <a href="resources.html" class="nav-link active">Resources</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-toggle active">Resources <i class="ri-arrow-down-s-line"></i></span>
+                    <div class="nav-dropdown-menu">
+                        <a href="resources.html" class="dropdown-link active"><i class="ri-folder-open-line"></i> All Resources</a>
+                        <a href="know-your-rights.html" class="dropdown-link"><i class="ri-shield-user-line"></i> Know Your Rights</a>
+                        <a href="guides-reports.html" class="dropdown-link"><i class="ri-book-open-line"></i> Guides & Reports</a>
+                    </div>
+                </div>
                 <a href="file-complaint.html" class="nav-link" style="color: var(--color-orange); font-weight: 700;">Report Incident</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
@@ -48,13 +59,9 @@
         <section class="res-hero">
             <div class="res-hero-inner">
                 <div class="res-hero-content">
-                    <span class="res-hero-tag"><i class="ri-folder-open-line"></i> Resource Library</span>
-                    <h1>Know Your Rights as an American Muslim</h1>
-                    <p>Free guides on your constitutional rights—from FBI encounters to workplace prayer accommodations, airport profiling to school bullying. Available in English, Arabic, Urdu, Somali, and Bangla.</p>
-                    <div class="res-hero-actions">
-                        <a href="#downloads" class="btn btn-primary-lg"><span>Download Free Guides</span> <i class="ri-arrow-right-line"></i></a>
-                        <a href="#partners" class="btn btn-outline-white"><span>Partner Resources</span></a>
-                    </div>
+                    <span class="res-hero-tag"><i class="ri-folder-open-line"></i> Resource Center</span>
+                    <h1>Empowering Our Community With Knowledge</h1>
+                    <p>Access free guides, know your rights materials, and comprehensive reports to protect yourself and your family.</p>
                 </div>
             </div>
         </section>
@@ -66,7 +73,7 @@
                     <div class="res-stat-icon"><i class="ri-file-list-3-line"></i></div>
                     <div class="res-stat-info">
                         <span class="res-stat-number">50+</span>
-                        <span class="res-stat-text">Free Guides</span>
+                        <span class="res-stat-text">Free Resources</span>
                     </div>
                 </div>
                 <div class="res-stat-box">
@@ -93,155 +100,134 @@
             </div>
         </section>
 
-
-
-        <!-- Resource Categories Section -->
-        <section id="categories" class="res-categories">
+        <!-- Main Resource Hub Cards -->
+        <section class="res-hub">
             <div class="res-container">
-                <div class="res-header">
+                <div class="section-header">
                     <div class="label-pill">
                         <span class="dot blue-dot"></span>
-                        Browse by Category
+                        Explore Resources
                     </div>
-                    <h2>Resource Categories</h2>
-                    <p>Find the resources you need organized by topic</p>
+                    <h2>What Are You Looking For?</h2>
+                    <p>Browse our comprehensive resource library organized by category</p>
                 </div>
 
-                <div class="res-cat-grid">
-                    <a href="#downloads" class="res-cat-card">
-                        <div class="res-cat-icon blue">
+                <div class="res-hub-grid">
+                    <!-- Know Your Rights Card -->
+                    <a href="know-your-rights.html" class="res-hub-card">
+                        <div class="hub-card-icon blue">
                             <i class="ri-shield-user-line"></i>
                         </div>
-                        <h3>FBI & Law Enforcement</h3>
-                        <p>Your rights during FBI visits, police encounters, and government questioning. Know when to speak and when to remain silent.</p>
-                        <span class="res-cat-count">12 Resources</span>
-                    </a>
-                    <a href="#downloads" class="res-cat-card">
-                        <div class="res-cat-icon orange">
-                            <i class="ri-building-line"></i>
+                        <div class="hub-card-content">
+                            <h3>Know Your Rights</h3>
+                            <p>Essential information about your constitutional rights during FBI encounters, police stops, airport screening, and more.</p>
+                            <ul class="hub-card-list">
+                                <li><i class="ri-check-line"></i> FBI & Law Enforcement</li>
+                                <li><i class="ri-check-line"></i> Airport & Travel Rights</li>
+                                <li><i class="ri-check-line"></i> Workplace Protections</li>
+                                <li><i class="ri-check-line"></i> Student Rights</li>
+                            </ul>
                         </div>
-                        <h3>Workplace & Prayer</h3>
-                        <p>Request Jummah prayer time, hijab accommodations, beard policies, and Ramadan schedule adjustments with our templates.</p>
-                        <span class="res-cat-count">8 Resources</span>
-                    </a>
-                    <a href="#downloads" class="res-cat-card">
-                        <div class="res-cat-icon blue">
-                            <i class="ri-graduation-cap-line"></i>
+                        <div class="hub-card-footer">
+                            <span class="hub-card-count"><i class="ri-file-text-line"></i> 20+ Resources</span>
+                            <span class="hub-card-link">Explore <i class="ri-arrow-right-line"></i></span>
                         </div>
-                        <h3>Muslim Students</h3>
-                        <p>Rights for hijab, prayer rooms, halal food, bullying protection, and religious holiday accommodations in schools.</p>
-                        <span class="res-cat-count">10 Resources</span>
                     </a>
-                    <a href="#downloads" class="res-cat-card">
-                        <div class="res-cat-icon orange">
-                            <i class="ri-flight-takeoff-line"></i>
+
+                    <!-- Guides & Reports Card -->
+                    <a href="guides-reports.html" class="res-hub-card">
+                        <div class="hub-card-icon orange">
+                            <i class="ri-book-open-line"></i>
                         </div>
-                        <h3>Airport & Travel</h3>
-                        <p>Know your rights during TSA screening, secondary inspection, device searches, and CBP encounters at the border.</p>
-                        <span class="res-cat-count">15 Resources</span>
-                    </a>
-                    <a href="#downloads" class="res-cat-card">
-                        <div class="res-cat-icon blue">
-                            <i class="ri-home-heart-line"></i>
+                        <div class="hub-card-content">
+                            <h3>Guides & Reports</h3>
+                            <p>Practical guides, letter templates, and in-depth research reports on civil rights trends and issues affecting American Muslims.</p>
+                            <ul class="hub-card-list">
+                                <li><i class="ri-check-line"></i> Accommodation Letters</li>
+                                <li><i class="ri-check-line"></i> Annual Civil Rights Reports</li>
+                                <li><i class="ri-check-line"></i> Mosque Security Guides</li>
+                                <li><i class="ri-check-line"></i> Policy Analysis</li>
+                            </ul>
                         </div>
-                        <h3>Mosque & Community</h3>
-                        <p>Security guidance for masajid, zoning rights for Islamic centers, and community safety planning resources.</p>
-                        <span class="res-cat-count">6 Resources</span>
-                    </a>
-                    <a href="#downloads" class="res-cat-card">
-                        <div class="res-cat-icon orange">
-                            <i class="ri-alarm-warning-line"></i>
+                        <div class="hub-card-footer">
+                            <span class="hub-card-count"><i class="ri-file-text-line"></i> 25+ Resources</span>
+                            <span class="hub-card-link">Explore <i class="ri-arrow-right-line"></i></span>
                         </div>
-                        <h3>Hate Crimes & Threats</h3>
-                        <p>How to document incidents, report hate crimes, and protect yourself and your family from Islamophobic attacks.</p>
-                        <span class="res-cat-count">9 Resources</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Downloads Section -->
-        <section id="downloads" class="res-downloads">
+        <!-- Featured Downloads -->
+        <section class="res-featured">
             <div class="res-container">
-                <div class="res-header light">
-                    <div class="label-pill light">
-                        <span class="dot"></span>
-                        Free Materials
+                <div class="section-header">
+                    <div class="label-pill">
+                        <span class="dot orange-dot"></span>
+                        Most Popular
                     </div>
-                    <h2>Downloadable Resources</h2>
-                    <p>Print-ready guides, pocket cards, and educational flyers</p>
+                    <h2>Featured Resources</h2>
+                    <p>Our most downloaded and requested materials</p>
                 </div>
 
-                <div class="res-downloads-grid">
-                    <div class="res-download-card">
-                        <div class="res-download-card-icon">
-                            <i class="ri-file-pdf-2-line"></i>
+                <div class="res-featured-grid">
+                    <div class="featured-card">
+                        <div class="featured-card-badge">Pocket Card</div>
+                        <div class="featured-card-icon"><i class="ri-shield-check-line"></i></div>
+                        <h4>Know Your Rights Card</h4>
+                        <p>Wallet-sized card with essential rights during law enforcement encounters</p>
+                        <div class="featured-card-meta">
+                            <span><i class="ri-download-line"></i> 8.2K downloads</span>
+                            <span><i class="ri-translate-2"></i> 5 languages</span>
                         </div>
-                        <div class="res-download-card-content">
-                            <span class="res-download-card-type">Pocket Card</span>
-                            <h4>Muslim Rights Card (English/Arabic)</h4>
-                            <span class="res-download-card-meta">PDF • 2 pages • 8.2K downloads</span>
-                        </div>
-                        <a href="#" class="res-download-card-btn">
-                            <i class="ri-download-2-line"></i>
-                        </a>
+                        <a href="know-your-rights.html" class="featured-card-btn">Get Resource</a>
                     </div>
-                    <div class="res-download-card">
-                        <div class="res-download-card-icon">
-                            <i class="ri-file-pdf-2-line"></i>
-                        </div>
-                        <div class="res-download-card-content">
-                            <span class="res-download-card-type">Guide</span>
-                            <h4>What To Do If FBI Contacts You</h4>
-                            <span class="res-download-card-meta">PDF • 8 pages • 5.4K downloads</span>
-                        </div>
-                        <a href="#" class="res-download-card-btn">
-                            <i class="ri-download-2-line"></i>
-                        </a>
-                    </div>
-                    <div class="res-download-card">
-                        <div class="res-download-card-icon">
-                            <i class="ri-file-pdf-2-line"></i>
-                        </div>
-                        <div class="res-download-card-content">
-                            <span class="res-download-card-type">Template</span>
-                            <h4>Jummah Prayer Accommodation Letter</h4>
-                            <span class="res-download-card-meta">PDF • 3 pages • 3.1K downloads</span>
-                        </div>
-                        <a href="#" class="res-download-card-btn">
-                            <i class="ri-download-2-line"></i>
-                        </a>
-                    </div>
-                    <div class="res-download-card">
-                        <div class="res-download-card-icon">
-                            <i class="ri-file-pdf-2-line"></i>
-                        </div>
-                        <div class="res-download-card-content">
-                            <span class="res-download-card-type">Guide</span>
-                            <h4>Ramadan Workplace Rights</h4>
-                            <span class="res-download-card-meta">PDF • 4 pages • 4.7K downloads</span>
-                        </div>
-                        <a href="#" class="res-download-card-btn">
-                            <i class="ri-download-2-line"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="res-downloads-action">
-                    <a href="contact.html" class="btn-white">
-                        <i class="ri-mail-line"></i>
-                        <span>Request More Resources</span>
-                    </a>
+                    <div class="featured-card">
+                        <div class="featured-card-badge">Guide</div>
+                        <div class="featured-card-icon"><i class="ri-user-search-line"></i></div>
+                        <h4>FBI Contact Guide</h4>
+                        <p>What to do if the FBI contacts you or visits your home</p>
+                        <div class="featured-card-meta">
+                            <span><i class="ri-download-line"></i> 5.4K downloads</span>
+                            <span><i class="ri-file-text-line"></i> 8 pages</span>
+                        </div>
+                        <a href="guides-reports.html#guides" class="featured-card-btn">Get Resource</a>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="featured-card-badge">Template</div>
+                        <div class="featured-card-icon"><i class="ri-calendar-check-line"></i></div>
+                        <h4>Jummah Accommodation</h4>
+                        <p>Letter template for requesting Friday prayer time at work</p>
+                        <div class="featured-card-meta">
+                            <span><i class="ri-download-line"></i> 3.1K downloads</span>
+                            <span><i class="ri-file-text-line"></i> 3 pages</span>
+                        </div>
+                        <a href="guides-reports.html#guides" class="featured-card-btn">Get Resource</a>
+                    </div>
+
+                    <div class="featured-card">
+                        <div class="featured-card-badge">Report</div>
+                        <div class="featured-card-icon"><i class="ri-line-chart-line"></i></div>
+                        <h4>2024 Civil Rights Report</h4>
+                        <p>Annual report on discrimination cases and civil rights trends</p>
+                        <div class="featured-card-meta">
+                            <span><i class="ri-download-line"></i> 2.8K downloads</span>
+                            <span><i class="ri-file-text-line"></i> 45 pages</span>
+                        </div>
+                        <a href="guides-reports.html#reports" class="featured-card-btn">Get Resource</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Partners Section -->
-        <section id="partners" class="res-partners">
+        <section class="res-partners">
             <div class="res-container">
-                <div class="res-header">
+                <div class="section-header">
                     <div class="label-pill">
-                        <span class="dot orange-dot"></span>
+                        <span class="dot blue-dot"></span>
                         Partner Organizations
                     </div>
                     <h2>Additional Resources</h2>
@@ -316,11 +302,11 @@
                 </ul>
             </div>
             <div>
-                <h4 class="footer-heading">Programs</h4>
+                <h4 class="footer-heading">Resources</h4>
                 <ul class="footer-links">
-                    <li><a href="advocacy.html">Advocacy</a></li>
-                    <li><a href="request-speaker.html">Request a Speaker</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="know-your-rights.html">Know Your Rights</a></li>
+                    <li><a href="guides-reports.html">Guides & Reports</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
                 </ul>
             </div>
             <div class="footer-newsletter">
@@ -337,6 +323,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="animations.js"></script>
 </body>
 </html>

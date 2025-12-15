@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Request - CAIR Michigan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media-request.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="ri-scales-3-line logo-icon-font"></i>
+                <span class="logo-text">CAIR <span class="logo-sub">Michigan</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="who-we-are.html" class="nav-link">Who We Are</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-toggle">Programs <i class="ri-arrow-down-s-line"></i></span>
+                    <div class="nav-dropdown-menu">
+                        <a href="advocacy.html" class="dropdown-link"><i class="ri-megaphone-line"></i> Advocacy</a>
+                        <a href="safe-space.html" class="dropdown-link"><i class="ri-shield-star-line"></i> Safe Space</a>
+                        <a href="request-speaker.html" class="dropdown-link"><i class="ri-mic-line"></i> Request a Speaker</a>
+                        <a href="media-request.html" class="dropdown-link active"><i class="ri-newspaper-line"></i> Media Request</a>
+                        <a href="volunteer.html" class="dropdown-link"><i class="ri-heart-line"></i> Volunteer</a>
+                        <a href="internships.html" class="dropdown-link"><i class="ri-graduation-cap-line"></i> Internships</a>
+                    </div>
+                </div>
+                <a href="media.html" class="nav-link">In The Media</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-toggle">Resources <i class="ri-arrow-down-s-line"></i></span>
+                    <div class="nav-dropdown-menu">
+                        <a href="resources.html" class="dropdown-link"><i class="ri-folder-open-line"></i> All Resources</a>
+                        <a href="know-your-rights.html" class="dropdown-link"><i class="ri-shield-user-line"></i> Know Your Rights</a>
+                        <a href="guides-reports.html" class="dropdown-link"><i class="ri-book-open-line"></i> Guides & Reports</a>
+                    </div>
+                </div>
+                <a href="file-complaint.html" class="nav-link" style="color: var(--color-orange); font-weight: 700;">Report Incident</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-primary-sm">Donate</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="mr-hero">
+            <div class="mr-hero-inner">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="ri-arrow-right-s-line"></i>
+                    <span>Media Request</span>
+                </nav>
+                <h1>Media Request</h1>
+                <p>Request interviews, statements, or expert commentary from CAIR Michigan</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="mr-main">
+            <div class="mr-main-inner">
+                <!-- Left: Info Cards -->
+                <div class="mr-info">
+                    <div class="info-card highlight">
+                        <div class="info-icon">
+                            <i class="ri-time-line"></i>
+                        </div>
+                        <h3>Quick Response</h3>
+                        <p>We respond to media inquiries within 2-4 hours during business hours for breaking news.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-mic-line"></i>
+                        </div>
+                        <h3>Expert Commentary</h3>
+                        <p>Our team provides expert analysis on civil rights, Islamophobia, and Muslim community issues.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-vidicon-line"></i>
+                        </div>
+                        <h3>On-Camera Ready</h3>
+                        <p>Available for TV, radio, podcast interviews, and press conferences.</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <h4>Urgent Media Inquiries</h4>
+                        <p>For breaking news or time-sensitive requests:</p>
+                        <a href="tel:248-559-2247" class="contact-link">
+                            <i class="ri-phone-line"></i>
+                            248-559-2247
+                        </a>
+                        <a href="mailto:media@cairmichigan.org" class="contact-link">
+                            <i class="ri-mail-line"></i>
+                            media@cairmichigan.org
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="mr-form-container">
+                    <div class="form-header">
+                        <h2>Submit Your Request</h2>
+                        <p>Fill out the form below and our communications team will respond promptly.</p>
+                    </div>
+
+                    <form class="mr-form" action="#" method="POST">
+                        <div class="form-section">
+                            <h3><span class="section-num">1</span> Your Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="outlet">Media Outlet <span class="required">*</span></label>
+                                    <input type="text" id="outlet" name="outlet" required placeholder="Organization name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Your Role/Title</label>
+                                <input type="text" id="role" name="role" placeholder="e.g., Reporter, Producer, Editor">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3><span class="section-num">2</span> Request Details</h3>
+                            <div class="form-group">
+                                <label>Request Type <span class="required">*</span></label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="type" value="interview">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label"><i class="ri-mic-line"></i> <span>Interview</span></span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="type" value="statement">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label"><i class="ri-file-text-line"></i> <span>Statement</span></span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="type" value="background">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label"><i class="ri-information-line"></i> <span>Background Info</span></span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="type" value="expert">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-label"><i class="ri-user-star-line"></i> <span>Expert Source</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="deadline">Deadline <span class="required">*</span></label>
+                                    <input type="datetime-local" id="deadline" name="deadline" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="medium">Medium</label>
+                                    <select id="medium" name="medium">
+                                        <option value="">Select medium</option>
+                                        <option value="tv">Television</option>
+                                        <option value="radio">Radio/Podcast</option>
+                                        <option value="print">Print/Online</option>
+                                        <option value="documentary">Documentary</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="topic">Story Topic <span class="required">*</span></label>
+                                <input type="text" id="topic" name="topic" required placeholder="Brief description of your story">
+                            </div>
+                            <div class="form-group">
+                                <label for="details">Additional Details</label>
+                                <textarea id="details" name="details" rows="4" placeholder="Please provide context about your story, specific questions, or any other relevant information..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">
+                                <span>Submit Request</span>
+                                <i class="ri-send-plane-line"></i>
+                            </button>
+                            <p class="form-note">We typically respond within 2-4 business hours.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="mr-topics">
+            <div class="mr-topics-inner">
+                <div class="section-header">
+                    <span class="section-tag"><i class="ri-lightbulb-line"></i> Expertise</span>
+                    <h2>Topics We Cover</h2>
+                    <p>Our team provides expert commentary on a wide range of issues</p>
+                </div>
+                <div class="topics-grid">
+                    <div class="topic-item">
+                        <i class="ri-scales-3-line"></i>
+                        <span>Civil Rights</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-shield-star-line"></i>
+                        <span>Islamophobia</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-government-line"></i>
+                        <span>Policy & Legislation</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-community-line"></i>
+                        <span>Muslim Community</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-briefcase-line"></i>
+                        <span>Workplace Rights</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-graduation-cap-line"></i>
+                        <span>Education</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-plane-line"></i>
+                        <span>Travel & Immigration</span>
+                    </div>
+                    <div class="topic-item">
+                        <i class="ri-heart-line"></i>
+                        <span>Hate Crimes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="ri-scales-3-line" style="color:var(--color-blue)"></i> CAIR MI</h3>
+                <p>Serving Michigan's Muslim community for 25+ years—free legal help, fighting Islamophobia, and empowering American Muslims to know their rights.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/CAIRMI" class="social-icon"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://www.facebook.com/CAIRMichigan/" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/cairmichigan/" class="social-icon"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="file-complaint.html">Report Incident</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="resources.html">Resource Library</a></li>
+                    <li><a href="request-speaker.html">Request a Speaker</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4 class="footer-heading">Stay Updated</h4>
+                <p>Get alerts and community news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="ri-send-plane-fill"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>© 2025 CAIR Michigan. All rights reserved.</p></div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>

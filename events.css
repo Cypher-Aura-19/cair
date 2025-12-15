@@ -421,6 +421,9 @@
     overflow: hidden;
     border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .event-card:hover {
@@ -462,6 +465,9 @@
 
 .card-content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-date {
@@ -491,6 +497,7 @@
     color: #64748b;
     line-height: 1.6;
     margin-bottom: 18px;
+    flex: 1;
 }
 
 .card-footer {
@@ -577,6 +584,9 @@
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .type-card:hover {

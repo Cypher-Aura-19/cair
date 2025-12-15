@@ -78,20 +78,7 @@
     margin: 0 auto;
 }
 
-.timeline-header {
-    text-align: left;
-    margin-bottom: 60px;
-}
-
-.timeline-header h2 {
-    font-size: 2.5rem;
-    margin: 16px 0 12px;
-}
-
-.timeline-header p {
-    color: var(--color-text-grey);
-    font-size: 18px;
-}
+/* Timeline header uses global .section-header from style.css */
 
 .timeline-steps {
     display: flex;
@@ -159,20 +146,7 @@
     margin: 0 auto;
 }
 
-.cases-header {
-    text-align: left;
-    margin-bottom: 60px;
-}
-
-.cases-header h2 {
-    font-size: 2.5rem;
-    margin: 16px 0 12px;
-}
-
-.cases-header p {
-    color: var(--color-text-grey);
-    font-size: 18px;
-}
+/* Cases header uses global .section-header from style.css */
 
 .cases-grid {
     display: grid;
