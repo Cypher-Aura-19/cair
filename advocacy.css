@@ -415,15 +415,6 @@
 
 /* Light section header variant defined in style.css */
 
-.label-pill.light {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.label-pill.light span {
-    color: white;
-}
-
 .white-dot {
     background: white;
 }

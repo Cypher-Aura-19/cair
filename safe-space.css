@@ -3,53 +3,6 @@
    ============================================ */
 
 /* ============================================
-   LABEL PILL FIX - Proper alignment
-   ============================================ */
-.safe-mission-section .label-pill,
-.safe-beliefs-section .label-pill,
-.safe-services-section .label-pill,
-.safe-facts-section .label-pill,
-.safe-contact-section .label-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--color-dark);
-}
-
-.safe-mission-section .dot,
-.safe-beliefs-section .dot,
-.safe-services-section .dot,
-.safe-facts-section .dot,
-.safe-contact-section .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.safe-mission-section .blue-dot,
-.safe-beliefs-section .blue-dot,
-.safe-services-section .blue-dot,
-.safe-facts-section .blue-dot,
-.safe-contact-section .blue-dot {
-    background: var(--color-blue);
-}
-
-.safe-mission-section .orange-dot,
-.safe-beliefs-section .orange-dot,
-.safe-services-section .orange-dot,
-.safe-facts-section .orange-dot,
-.safe-contact-section .orange-dot {
-    background: var(--color-orange);
-}
-
-/* ============================================
    HERO SECTION
    ============================================ */
 .safe-hero {
